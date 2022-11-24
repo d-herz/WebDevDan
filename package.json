@@ -1,0 +1,19 @@
+{
+  "name": "webdevdan2",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+  },
+  "author": "Daniel Hyres",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.42.1",
+    "theme-change": "^2.2.0"
+  }
+}
