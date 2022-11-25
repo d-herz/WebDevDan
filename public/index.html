@@ -16,9 +16,10 @@
   <!-- <link rel="stylesheet" href="styles.css"> Don't really need this -->
 
 </head>
-<body md:max-lg:px-4lg:w-1/2>
+<body>
+
   <!-- navbar start -->
-  <div class="navbar bg-neutral">
+  <div class="navbar bg-neutral md:fixed z-10">
 
     <div class="navbar-start">
       <div class="dropdown">
@@ -73,32 +74,38 @@
   </div>
   <!-- End Navbar -->
 
-  <main class="bg-base-300"> 
+  <main class="bg-base-300 md:pt-16 "> 
 
     <!-- Carousel Container -->
-    <div class="p-5 lg:px-20 flex-col justify-center text-center min-h-screen ">
+    <div class="p-5 lg:px-20 flex-col justify-center text-center  ">
       <div class="text-center ">
         <h1>Latest Projects <i class="fa-brands fa-github"></i></h1>
       </div>
 
       <!-- Carousel -->
-      <div class="carousel m-5 md:m-16 xl:m-20 max-h-screen">
+      <div class="carousel mb-4 m-2 md:mx-16 xl:mx-20 max-h-screen">
 
         <!-- Testing Cards below -->
-        <div id="slide5" class="carousel-item relative w-full justify-center py-2">
-          <div class="card md:card-side bg-base-100 shadow-xl">
-            <figure><img class="md:max-lg:h-full" src="/public/images/socialayy2.png" alt="Album" /></figure>
+        <div id="slide5" class="carousel-item items-start relative w-full justify-center py-2">
+          <!-- double nest test -->
+          <div class="p-5 lg:pt-10" >
 
-            <div class="card-body md:max-lg:px-4 md:w-1/2 ">
-              <h2 class="card-title">SocialAyy!</h2>
-              <p class="text-left">Click the button to listen on Spotiwhy app.</p>
-              <div class="card-actions justify-center">
-                <button class="btn btn-primary">Listen</button>
-                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+              <figure><img class="lg:max-xl:h-full" src="/public/images/socialayy2.png" alt="Album" /></figure>
+  
+              <div class="card-body lg:max-xl:px-4 lg:w-1/2 ">
+                <h2 class="card-title">SocialAyy!</h2>
+                <p class="text-left pb-2">Click the button to listen on Spotiwhy app.</p>
+                <div class="card-actions justify-center">
+                  <button class="btn btn-primary">Listen</button>
+                  <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                </div>
               </div>
+  
             </div>
 
           </div>
+          <!-- double nest test -->
 
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide7" class="btn btn-circle">❮</a>
@@ -107,22 +114,28 @@
 
         </div>
 
-        <div id="slide6" class="carousel-item relative w-full justify-center py-2">
-          <div class="card md:card-side bg-base-100 shadow-xl">
-            <figure><img class="md:max-lg:h-full" src="/public/images/apod.png" alt="Album" /></figure>
+        <div id="slide6" class="carousel-item items-start relative w-full justify-center py-2">
+          <!-- Double nest to fix scroll snap -->
+          <div class="p-5 lg:pt-10 ">
 
-            <div class="card-body md:max-lg:px-4 md:w-1/2">
-              <h2 class="card-title">Litchfield Stargazer Society</h2>
-              <p class="text-left">Discover the cosmos! Each day a different image or photograph of our fascinating universe is showcased along with a
-              brief explanation written by a professional astronomer.</p>
-              <div class="card-actions justify-center">
-                <button class="btn btn-primary">Listen</button>
-                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
-                <a href=""></a>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+              <figure><img class="lg:max-xl:h-full" src="/public/images/apod.png" alt="Album" /></figure>
+  
+              <div class="card-body lg:max-xl:px-4 lg:w-1/2">
+                <h2 class="card-title">Litchfield Stargazer Society</h2>
+                <p class="text-left pb-2">Discover the cosmos! Each day a different image or photograph of our fascinating universe is showcased along with a
+                brief explanation written by a professional astronomer.</p>
+                <div class="card-actions justify-center">
+                  <button class="btn btn-primary">Listen</button>
+                  <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                  <a href=""></a>
+                </div>
               </div>
+  
             </div>
 
           </div>
+
 
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide5" class="btn btn-circle">❮</a>
@@ -131,17 +144,22 @@
         
         </div>
 
-        <div id="slide7" class="carousel-item relative w-full justify-center py-2">
-          <div class="card md:card-side  bg-base-100 shadow-xl">
-            <figure><img class="md:max-lg:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
+        <div id="slide7" class="carousel-item items-start relative w-full justify-center py-2">
+          <!-- Double nest to fix scroll snap -->
+          <div class="p-5 lg:pt-10">
 
-            <div class="card-body md:max-lg:px-4 md:w-1/2">
-              <h2 class="card-title">Local's Barber Shop</h2>
-              <p class="text-left">A responsive multipage website for a Barber Shop in the heart of Central Florida. </p>
-              <div class="card-actions justify-center">
-                <button class="btn btn-primary">Listen</button>
-                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+            <div class="card lg:card-side  bg-base-100 shadow-xl">
+              <figure><img class="lg:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
+  
+              <div class="card-body lg:max-xl:px-4 lg:w-1/2">
+                <h2 class="card-title">Local's Barber Shop</h2>
+                <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central Florida. </p>
+                <div class="card-actions justify-center">
+                  <button class="btn btn-primary">Listen</button>
+                  <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                </div>
               </div>
+  
             </div>
 
           </div>
@@ -158,6 +176,15 @@
 
     </div>
     <!-- End Carousel Container -->
+
+    <!-- Content Container -->
+    <div class="p-5 lg:px-20 flex-col justify-center text-center min-h-screen ">
+      <div>
+
+      </div>
+
+    </div>
+    <!-- End Content Container -->
 
   
   </main>
@@ -197,5 +224,5 @@
   </footer>
  
   
-</body md:max-lg:px-4
+</body>
 </html>
