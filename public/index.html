@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="fantasy" lang="en">
+<html data-theme="luxury" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,17 @@
 
   <!-- Compiled Tailwind CSS -->
   <link rel="stylesheet" href="./css/output.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Regular CSS -->
   <!-- <link rel="stylesheet" href="styles.css"> Don't really need this -->
 
 </head>
-<body>
+<body md:max-lg:px-4lg:w-1/2>
   <!-- navbar start -->
-  <div class="navbar bg-secondary">
+  <div class="navbar bg-neutral">
 
     <div class="navbar-start">
       <div class="dropdown">
@@ -69,27 +73,28 @@
   </div>
   <!-- End Navbar -->
 
-  <main class="bg-secondary-content"> 
+  <main class="bg-base-300"> 
 
     <!-- Carousel Container -->
-    <div class="p-5 flex-col justify-center text-center h-screen">
+    <div class="p-5 lg:px-20 flex-col justify-center text-center min-h-screen ">
       <div class="text-center ">
-        <h1>Latest Projects</h1>
+        <h1>Latest Projects <i class="fa-brands fa-github"></i></h1>
       </div>
 
       <!-- Carousel -->
-      <div class="carousel m-5 md:m-16 xl:m-20 ">
+      <div class="carousel m-5 md:m-16 xl:m-20 max-h-screen">
 
         <!-- Testing Cards below -->
-        <div id="slide5" class="carousel-item sm:relative w-full justify-center pt-4">
-          <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+        <div id="slide5" class="carousel-item relative w-full justify-center py-2">
+          <div class="card md:card-side bg-base-100 shadow-xl">
+            <figure><img class="md:max-lg:h-full" src="/public/images/socialayy2.png" alt="Album" /></figure>
 
-            <div class="card-body">
-              <h2 class="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="card-body md:max-lg:px-4 md:w-1/2 ">
+              <h2 class="card-title">SocialAyy!</h2>
+              <p class="text-left">Click the button to listen on Spotiwhy app.</p>
               <div class="card-actions justify-center">
                 <button class="btn btn-primary">Listen</button>
+                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
               </div>
             </div>
 
@@ -102,15 +107,18 @@
 
         </div>
 
-        <div id="slide6" class="carousel-item sm:relative w-full justify-center pt-4">
-          <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+        <div id="slide6" class="carousel-item relative w-full justify-center py-2">
+          <div class="card md:card-side bg-base-100 shadow-xl">
+            <figure><img class="md:max-lg:h-full" src="/public/images/apod.png" alt="Album" /></figure>
 
-            <div class="card-body">
-              <h2 class="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="card-body md:max-lg:px-4 md:w-1/2">
+              <h2 class="card-title">Litchfield Stargazer Society</h2>
+              <p class="text-left">Discover the cosmos! Each day a different image or photograph of our fascinating universe is showcased along with a
+              brief explanation written by a professional astronomer.</p>
               <div class="card-actions justify-center">
                 <button class="btn btn-primary">Listen</button>
+                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href=""></a>
               </div>
             </div>
 
@@ -123,15 +131,16 @@
         
         </div>
 
-        <div id="slide7" class="carousel-item sm:relative w-full justify-center pt-4">
-          <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+        <div id="slide7" class="carousel-item relative w-full justify-center py-2">
+          <div class="card md:card-side  bg-base-100 shadow-xl">
+            <figure><img class="md:max-lg:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
 
-            <div class="card-body">
-              <h2 class="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="card-body md:max-lg:px-4 md:w-1/2">
+              <h2 class="card-title">Local's Barber Shop</h2>
+              <p class="text-left">A responsive multipage website for a Barber Shop in the heart of Central Florida. </p>
               <div class="card-actions justify-center">
                 <button class="btn btn-primary">Listen</button>
+                <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
               </div>
             </div>
 
@@ -150,11 +159,9 @@
     </div>
     <!-- End Carousel Container -->
 
-    
-
-
-
+  
   </main>
+
   <footer class="footer footer-center p-10 bg-primary text-primary-content">
     <div>
       <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -190,5 +197,5 @@
   </footer>
  
   
-</body>
+</body md:max-lg:px-4
 </html>
