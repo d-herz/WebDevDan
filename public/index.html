@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="luxury" lang="en">
+<html data-theme="cyberpunk" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Regular CSS -->
-  <!-- <link rel="stylesheet" href="styles.css"> Don't really need this -->
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -45,7 +48,7 @@
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+      <a class="btn btn-ghost normal-case text-xl font-shadows">WebDevDan.com</a>
     </div>
 
     <div class="navbar-center hidden md:flex">
@@ -84,7 +87,6 @@
 
       <!-- Carousel -->
       <div class="carousel mb-4 m-2 md:mx-16 xl:mx-20 max-h-screen">
-
         <!-- Testing Cards below -->
         <div id="slide5" class="carousel-item items-start relative w-full justify-center py-2">
           <!-- double nest test -->
@@ -177,14 +179,63 @@
     </div>
     <!-- End Carousel Container -->
 
+    <!-- Card Phone test Container -->
+    <div class="p-1 lg:px-20 flex justify-center text-center bg-base-100">
+    
+      <div class="">
+    
+        <div class="mockup-phone lg:rotate-[-90deg] ">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1">
+
+              <div class="card lg:card-side lg:w-[32rem] bg-base-100 shadow-xl lg:rotate-[90deg]">
+                <figure><img class="lg:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
+              
+                <div class="card-body lg:max-xl:px-1 lg:w-2/3">
+                  <h2 class="card-title">Local's Barber Shop</h2>
+                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central Florida. </p>
+                  <div class="card-actions justify-center lg:pb-2">
+                    <button class="btn btn-primary">Listen</button>
+                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
+                        class="fa-brands fa-github text-xl"></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+
     <!-- Content Container -->
-    <div class="p-5 lg:px-20 flex-col justify-center text-center min-h-screen ">
-      <div>
+    <div class="p-1 lg:px-20 flex justify-center text-center bg-base-100">
+      
+      <div class="lg:rotate-[90deg]">
+
+        <div class="mockup-phone  ">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1"><h1 class="lg:rotate-[270deg]">Hi, I'm Dan</h1></div>
+          </div>
+        </div>
+
+        <div class="mockup-phone border-primary ">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1 "><h1 class="h1Iphone  lg:rotate-[270deg]">Your next software engineer...?</h1></div>
+          </div>
+        </div>
 
       </div>
 
     </div>
     <!-- End Content Container -->
+
+    
 
   
   </main>

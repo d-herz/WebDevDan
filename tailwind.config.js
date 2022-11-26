@@ -8,7 +8,15 @@ module.exports = {
       'xs': '361px',
       ...defaultTheme.screens,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'shadows': ['"Shadows Into Light"', 'cursive']
+
+      },
+    },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["corporate", "forest", "synthwave", "aqua", "cupcake", "luxury", "cyberpunk"]
+  }
 }
