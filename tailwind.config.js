@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate", "forest", "synthwave", "aqua", "cupcake", "luxury", "cyberpunk"]
+    themes: ["corporate", "forest", "synthwave", "aqua", "cupcake", "luxury", "cyberpunk"],
+    darkTheme: "luxury",
   }
 }
