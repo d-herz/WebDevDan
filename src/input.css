@@ -20,10 +20,9 @@
   content: "";
   width: 5px;
   height: 15px;
-  background: #c1ff7f;
+  background: #ff7f7f;
   display: inline-block;
   animation: cursor-blink 1.5s steps(2) infinite;
-
 }
 
 @keyframes cursor-blink {
