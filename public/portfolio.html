@@ -26,7 +26,7 @@
 
   <!-- navbar start -->
   <div class="navbar bg-neutral md:fixed z-10">
-
+  
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -34,49 +34,76 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Item 1</a></li>
+  
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-39">
+  
+          <li><a>Contact</a></li>
+          
+  
           <li tabindex="0">
-            <a class="justify-between">
-              Parent
+            <a>
+              Journey
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+            <ul class="p-2 ml-2 shadow bg-base-100 rounded-box w-39">
+              <li><a href="/public/about.html">About</a></li>
+              <li><a href="/public/blog.html">Blog</a></li>
+              <li><a href="/public/lectures.html">Lectures</a></li>
+              <li><a href="/public/resume.html">Resume</a></li>
             </ul>
           </li>
-          <li><a>Item 3</a></li>
+
+          <li><a href="/public/portfolio.html">Portfolio</a></li>
+  
+        
         </ul>
       </div>
       <a href="/public/index.html" class="btn btn-ghost normal-case text-xl font-shadows">WebDevDan.com</a>
     </div>
-
+  
+    <!-- Expanded Display (hidden on mobile)-->
     <div class="navbar-center hidden md:flex">
       <ul class="menu menu-horizontal p-0">
-        <li><a>Item 1</a></li>
+  
+        <li><a>Connect</a></li>
+  
         <li tabindex="0">
           <a>
-            Parent
+            Journey
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
             </svg>
           </a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40">
+            <li><a href="/public/about.html">About</a></li>
+            <li><a href="/public/blog.html">Blog</a></li>
+            <li><a href="/public/lectures.html">Lectures</a></li>
+            <li><a href="/public/resume.html">Resume</a></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        <li><a href="/public/portfolio.html">Portfolio</a></li>
       </ul>
     </div>
-
+  
     <div class="navbar-end">
-      <a class="btn">Get started</a>
+      <select data-choose-theme
+        class="select select-primary pr-7 md:mr-4 mx-auto max-w-xs min-h-0 max-h-6 md:max-h-8 text-xs md:text-sm text-center">
+        <option disabled selected>Choose Theme</option>
+        <!-- <option value="">Default</option> -->
+        <option value="luxury">Dark</option>
+        <option value="corporate">Light</option>
+        <option value="cyberpunk">Cyber Punk</option>
+  
+        <option value="synthwave">Galactic</option>
+        <option value="aqua">Night Sky</option>
+  
+        <!-- <option value="garden">Garden</option> -->
+        <!-- <option value="cupcake">cupcake</option> -->
+      </select>
     </div>
-
+  
   </div>
   <!-- End Navbar -->
 
@@ -86,7 +113,7 @@
     <!-- Carousel Container -->
     <div class="p-5 lg:px-20 flex-col justify-center   ">
       <div class="text-center ">
-        <h1>Portfolio!<i class="fa-brands fa-github"></i></h1>
+        <h1>Portfolio<i class="fa-brands fa-github"></i></h1>
       </div>
 
       <!-- Carousel -->
@@ -112,16 +139,19 @@
             <div class="artboard artboard-demo phone-1">
 
               <div class="card  bg-base-100 shadow-xl"> 
-                <figure><img class="" class="" src="/public/images/barber.png" alt="Album" /></figure>
+                <figure>
+                  <a href="https://github.com/d-herz/SocialAyy" class="href"><img class="lg:max-xl:h-full"
+                      src="/public/images/socialayy2.png" alt="Album" />
+                  </a>
+                </figure>
 
                 <div class="card-body ">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central
-                    Florida. </p>
-                  <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
+                  <h2 class="card-title">SocialAyy!</h2>
+                  <p class="text-left pb-2">Social networking for modern times. Connect, share, like, comment and scroll! </p>
+                  <div class="card-actions justify-center">
+                    <a href="https://socialayy.cyclic.app/" class="btn btn-primary">Visit</button>
+                      <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
+                          class="fa-brands fa-github text-xl"></i></a>
                   </div>
                 </div>
               </div>
@@ -136,16 +166,19 @@
             <div class="artboard artboard-demo phone-1">
         
               <div class="card  bg-base-100 shadow-xl">
-                <figure><img class="" class="" src="/public/images/barber.png" alt="Album" /></figure>
+                <figure>
+                  <a href="https://locals-barber-shop.netlify.app/">
+                    <img class="lg:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" />
+                  </a>
+                </figure>
         
                 <div class="card-body ">
                   <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central
-                    Florida. </p>
-                  <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
+                  <p class="text-left pb-2">A responsive website for a popular Central Florida Barber Shop. </p>
+                  <div class="card-actions justify-center">
+                    <a href="https://locals-barber-shop.netlify.app/" class="btn btn-primary">Visit</button>
+                      <a href="https://github.com/d-herz/Locals-Barber-Shop" class="btn btn-primary"><i
+                          class="fa-brands fa-github text-xl"></i></a>
                   </div>
                 </div>
               </div>
@@ -160,16 +193,20 @@
             <div class="artboard artboard-demo phone-1">
         
               <div class="card  bg-base-100 shadow-xl">
-                <figure><img class="" class="" src="/public/images/barber.png" alt="Album" /></figure>
+                <figure>
+                <a href="https://astronomy-pic-daily.netlify.app/">
+                  <img class="lg:max-xl:h-full" src="/public/images/apod.png" alt="Album" />
+                </a>
+              </figure>
         
                 <div class="card-body ">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central
-                    Florida. </p>
-                  <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
+                  <h2 class="card-title">Litchfield Stargazer Society</h2>
+                  <p class="text-left pb-2">Discover the cosmos! Featuring NASA API Integration.</p>>
+                  <div class="card-actions justify-center">
+                    <a href="https://astronomy-pic-daily.netlify.app/" class="btn btn-primary">Visit</button>
+                      <a href="https://github.com/d-herz/Stargazer-Society-APOD" class="btn btn-primary"><i
+                          class="fa-brands fa-github text-xl"></i></a>
+                      <a href=""></a>
                   </div>
                 </div>
               </div>
