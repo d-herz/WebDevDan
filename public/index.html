@@ -28,13 +28,13 @@
     <div class="navbar-start">
       <!-- Mobile View w/dropdown hamburger -->
       <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost md:hidden">
+        <label tabindex="0" class="btn btn-ghost md:hidden text-neutral-content">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
 
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-39">
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-2 p-2 shadow bg-base-200 rounded-box w-39">
 
           
           <li><a>Contact</a></li>
@@ -57,7 +57,7 @@
           <li><a href="/public/portfolio.html">Portfolio</a></li>
         </ul>
       </div>
-      <a href="/public/index.html" class="btn btn-ghost normal-case text-xl font-shadows">WebDevDan.com</a>
+      <a href="/public/index.html" class="btn btn-ghost normal-case text-xl font-shadows text-neutral-content ">WebDevDan.com</a>
     </div>
 
     <!-- Expanded Display (hidden on mobile)-->
@@ -86,18 +86,13 @@
 
     <div class="navbar-end">
       <select data-choose-theme
-        class="select select-primary pr-7 md:mr-4 mx-auto max-w-xs min-h-0 max-h-6 md:max-h-8 text-xs md:text-sm text-center">
+        class="select select-primary pl-2 pr-5 sm:mr-4 mx-auto max-w-xs min-h-0 max-h-6 sm:max-h-8 text-xs sm:text-sm text-center">
         <option disabled selected>Choose Theme</option>
         <!-- <option value="">Default</option> -->
         <option value="luxury">Dark</option>
         <option value="corporate">Light</option>
         <option value="cyberpunk">Cyber Punk</option>
-
-        <option value="synthwave">Galactic</option>
-        <option value="aqua">Night Sky</option>
-      
-        <!-- <option value="garden">Garden</option> -->
-        <!-- <option value="cupcake">cupcake</option> -->
+        <option value="garden">Garden</option>
       </select>
     </div>
 
@@ -109,12 +104,12 @@
 
     <!-- Carousel Container -->
     <div class="p-5 lg:px-20 flex-col justify-center   ">
-      <div class="text-center ">
-        <h1>Featured Projects<i class="fa-brands fa-github"></i></h1>
+      <div class="text-center font-shadows ">
+        <h1 class="tracking-wider text-lg">Featured Projects</h1>
       </div>
 
       <!-- Carousel -->
-      <div class="carousel mb-4 m-2 md:mx-16 xl:mx-20 max-h-screen">
+      <div class="carousel mb-4 md:mx-16 xl:mx-20 max-h-screen">
         <!-- Testing Cards below -->
         <div id="slide5" class="carousel-item items-start relative w-full justify-center py-2">
           <!-- double nest test -->
@@ -131,7 +126,7 @@
                 <p class="text-left pb-2">Social networking for modern times. Connect, share, like, comment and scroll!</p>
                 
                 <div class="card-actions justify-center">
-                  <a href="https://socialayy.cyclic.app/" class="btn btn-primary">Visit</button>
+                  <a href="https://socialayy.cyclic.app/" class="btn btn-primary ">Visit</a>
                   <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
                 </div>
 
@@ -165,7 +160,7 @@
                 <p class="text-left pb-2">Discover the cosmos! Featuring NASA API Integration.</p>
 
                 <div class="card-actions justify-center">
-                  <a href="https://astronomy-pic-daily.netlify.app/" class="btn btn-primary">Visit</button>
+                  <a href="https://astronomy-pic-daily.netlify.app/" class="btn btn-primary">Visit</a>
                   <a href="https://github.com/d-herz/Stargazer-Society-APOD" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
                   <a href=""></a>
                 </div>
@@ -196,7 +191,7 @@
                 <p class="text-left pb-2">A responsive website for a popular Central Florida Barber Shop.</p>
                 
                 <div class="card-actions justify-center">
-                  <a href="https://locals-barber-shop.netlify.app/" class="btn btn-primary">Visit</button>
+                  <a href="https://locals-barber-shop.netlify.app/" class="btn btn-primary">Visit</a>
                   <a href="https://github.com/d-herz/Locals-Barber-Shop" class="btn btn-primary"><i class="fa-brands fa-github text-xl"></i></a>
                 </div>
               </div>
@@ -223,7 +218,7 @@
 
 
       <!-- VERTICAL PHONE FOR MOBILE (HIDDEN ABOVE SM)  -->
-      <div class="max-w-[670px] items-start sm:hidden">
+      <div class="max-w-[670px] items-start sm:hidden py-4 ">
       
         <div class="mockup-phone  ">
           <div class="camera"></div>
@@ -238,7 +233,8 @@
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo  phone-1">
-              <h1 class="h1Iphone "> ...I build modern & responsive web apps. </h1>
+              <h1 class=" "> ...I build modern & responsive web apps. </h1>
+              <!-- <h1 class="h1Iphone">I'd love to see what we can build together,</h1> -->
             </div>
           </div>
         </div>
@@ -247,7 +243,7 @@
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-1 ">
-              <h1 class="h1Iphone">I'd love to see what we can build together,</h1>
+              <h1 class="h1Iphone pl-1">I'd love to see what we can build together,</h1>
       
             </div>
           </div>
@@ -266,7 +262,7 @@
       </div>
     
       <!-- HORIZONTAL PHONES FOR SM AND BIGGER -->
-      <div class="max-w-[670px] items-start hidden sm:block">
+      <div class="max-w-[670px] items-start hidden sm:block pt-4 pb-6">
     
         <div class="mockup-phone  ">
           <div class="camera"></div>
@@ -281,12 +277,13 @@
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo artboard-horizontal phone-1">
-              <h1 class="h1Iphone "> ...I build modern & responsive web apps. </h1>
+              <h1 class=" "> ...I build modern & responsive web apps. </h1>
+              <h1 class="h1Iphone">I'd love to see what we can build together,</h1>
             </div>
           </div>
         </div>
 
-        <div class="mockup-phone ">
+        <!-- <div class="mockup-phone ">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo artboard-horizontal phone-1 ">
@@ -294,9 +291,9 @@
               
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="mockup-phone border-primary ">
+        <div class="mockup-phone  ">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo artboard-horizontal phone-1 ">
@@ -310,70 +307,102 @@
     
     </div>
     <!-- End Content Container -->
+    
+  </main>
+  
+  <!-- Footer using: Card Phone Container -->
+  <footer class="p-1 py-2 lg:px-20 flex justify-center text-center bg-base-300">
 
-    <!-- Card Phone test Container -->
-    <div class="p-1 lg:px-20 flex justify-center text-center bg-base-100">
+    <div class="">
 
-      <div class="">
-      
-        <div class="mockup-phone lg:rotate-[-90deg] ">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo  phone-1">
-      
-              <div class="card lg:card-side lg:w-[32rem] bg-base-100 shadow-xl lg:rotate-[90deg]">
-                <figure><img class="lg:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
-      
-                <div class="card-body lg:max-xl:px-1 lg:w-2/3">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central Florida.
-                  </p>
-                  <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
-                  </div>
+      <!-- Vertical for less than SM -->
+      <div class="mockup-phone sm:hidden w-screen">
+        <div class="camera"></div>
+
+        <div class="display">
+          <div class="artboard artboard-demo phone-footer sm:phone-1">
+    
+            <div class="card bg-base-100 shadow-xl sm:card-side sm:w-[32rem] sm:rotate-[90deg] sm:rounded-[56px]">
+              <!-- <figure><img class="sm:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure> -->
+    
+              <div class="card-body lg:max-xl:px-1 sm:w-2/3 sm:pt-20 ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2022 - All right reserved
+                </p>
+
+                <div class="card-actions justify-center">
+
+                  <a href="https://github.com/d-herz" class="btn btn-ghost text-primary"><i class="fa-brands fa-github text-xl"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/daniel-hyres/" class="btn btn-ghost text-primary"><i
+                  class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+
+                  <a href="https://twitter.com/danherz636" class="btn btn-ghost text-primary"><i
+                  class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+
+                  <a href="https://youtube.com/@devlimiter" class="btn btn-ghost text-primary"><i class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+
                 </div>
               </div>
-      
             </div>
+    
           </div>
         </div>
+      </div>
+
+
+      <!-- Horizontal for sm and above phone footer -->
+      <div class="mockup-phone w-screen items-center hidden sm:block pt-4 pb-6">
+        <div class="camera"></div>
       
+        <div class="display justify-center">
+          <div class="artboard artboard-demo artboard-horizontal  ">
+      
+            <div class="card bg-base-100 shadow-xl sm:card-side sm:w-[32rem] sm:rounded-[56px]">
+              <!-- <figure><img class="sm:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure> -->
+      
+              <div class="card-body lg:max-xl:px-1 sm:w-2/3 sm:pt-20 ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2022 - All right reserved
+                </p>
+      
+                <div class="card-actions justify-center">
+      
+                  <a href="https://github.com/d-herz" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-github text-xl"></i>
+                  </a>
+      
+                  <a href="https://www.linkedin.com/in/daniel-hyres/" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+      
+                  <a href="https://twitter.com/danherz636" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+      
+                  <a href="https://youtube.com/@devlimiter" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+      
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
       </div>
     
-      <!-- <div class="">
-    
-        <div class="mockup-phone lg:rotate-[-90deg] ">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1">
-
-              <div class="card lg:card-side lg:w-[32rem] bg-base-100 shadow-xl lg:rotate-[90deg]">
-                <figure><img class="lg:max-xl:h-full" class="" src="/public/images/barber.png" alt="Album" /></figure>
-              
-                <div class="card-body lg:max-xl:px-1 lg:w-2/3">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central Florida. </p>
-                  <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-    
-      </div> --->
-    
-    </div> 
-    <!-- End Card Phone test Container -->
-
+    </div>
   
-  </main>
+    
+  </footer> 
+  <!-- End Card Phone test Container -->
 
   <footer class="footer footer-center p-10 bg-primary text-primary-content">
     <div>
@@ -389,7 +418,7 @@
       <p>Copyright © 2022 - All right reserved</p>
     </div>
     <div>
-      <!-- Socials? -->
+
       <div class="grid grid-flow-col gap-4">
         <a href="https://twitter.com/DevLimiter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
             <path
@@ -415,3 +444,18 @@
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <ul class="icons" id="socials">
+  <li><a href="https://twitter.com/danherz636" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+  </li>
+  <li><a href="https://www.linkedin.com/in/daniel-hyres/" class="icon brands fa-linkedin"><span
+        class="label">LinkedIn</span></a></li>
+  <li><a href="https://github.com/d-herz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+  <li><a href="https://www.twitch.tv/herz636" class="icon brands fa-twitch"><span class="label">Github</span></a></li>
+  
+
+
+</ul> -->
