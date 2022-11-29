@@ -2145,6 +2145,10 @@ h2{
   max-height: 1.5rem;
 }
 
+.max-h-\[568px\] {
+  max-height: 568px;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
@@ -2169,12 +2173,24 @@ h2{
   width: 100vw;
 }
 
+.w-\[94vh\] {
+  width: 94vh;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
 
 .max-w-\[670px\] {
   max-width: 670px;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
 }
 
 .-translate-y-1\/2 {
@@ -2196,10 +2212,6 @@ h2{
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .justify-center {
@@ -2278,6 +2290,11 @@ h2{
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2316,6 +2333,10 @@ h2{
 
 .font-shadows {
   font-family: "Shadows Into Light", cursive;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-xl {
@@ -2408,6 +2429,10 @@ h2{
     display: block;
   }
 
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -2424,33 +2449,13 @@ h2{
     width: 66.666667%;
   }
 
-  .sm\:rotate-\[90deg\] {
-    --tw-rotate: 90deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .sm\:rounded-\[56px\] {
     border-radius: 56px;
-  }
-
-  .sm\:pt-20 {
-    padding-top: 5rem;
   }
 
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:phone-1.artboard {
-    width: 320px;
-    height: 568px;
-  }
-
-  .sm\:phone-1.artboard.horizontal,.sm\:phone-1
-      .artboard.artboard-horizontal {
-    width: 568px;
-    height: 320px;
   }
 
   .sm\:card-side {
