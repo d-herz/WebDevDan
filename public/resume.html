@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html data-theme="luxury" lang="en">
+<html data-theme="" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebDevDan.com - Home</title>
+  <title>WebDevDan.com - Resume</title>
 
   <!-- Compiled Tailwind CSS -->
   <link rel="stylesheet" href="./css/output.css">
@@ -61,7 +61,7 @@
     </div>
   
     <!-- Expanded Display (hidden on mobile)-->
-    <div class="navbar-center hidden md:flex">
+    <div class="navbar-center hidden md:flex text-neutral-content">
       <ul class="menu menu-horizontal p-0">
   
         <li><a>Connect</a></li>
@@ -73,7 +73,7 @@
               <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
             </svg>
           </a>
-          <ul tabindex="0" class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40">
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40 text-neutral">
             <li><a href="/public/about.html">About</a></li>
             <li><a href="/public/blog.html">Blog</a></li>
             <li><a href="/public/lectures.html">Lectures</a></li>
@@ -102,93 +102,202 @@
   <!-- Main Container -->
   <main class="bg-base-300 md:pt-16 ">
 
+    <!-- Header Container -->
+    <div class="p-5 pb-0 lg:px-20 flex-col justify-center bg-base-300   ">
+      <div class="text-center bg-base-100">
+        <h1 class="tracking-wider text-lg font-shadows">Resume <i class="fa-solid fa-file-pdf"></i></h1>
+      </div>
+    </div>
+    <!-- End Header Container -->
+
     <!-- Resume Container -->
-    <div class="p-5 lg:px-20 flex-col justify-center max-w-screen ">
+    <div class="p-1 py-5 flex text-center justify-center ">
 
-      <div class="text-center ">
-        <h1>Resume <i class="fa-solid fa-file"></i></h1>
-      </div>
-      <!-- <div class="w-2/3">
-        <object type="application/pdf" data="/public/images/resume.pdf" width="794" height="1123">
-        </object>
-      </div> -->
-
-      <div class="">
+      <!-- VERTICAL PHONE FOR MOBILE (HIDDEN ABOVE SM)  -->
+      <div class="text-center items-start sm:hidden">
       
-        <div class="mockup-phone lg:rotate-[-90deg] ">
+        <div class="mockup-phone  ">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-1">
       
               <div class="card lg:card-side lg:w-[32rem] bg-base-100 shadow-xl lg:rotate-[90deg]">
-                <figure><img class="lg:max-xl:h-full" class="" src="/public/images/resume.png" alt="Album" /></figure>
+                <figure>
+                  <img class="h-full" class="" src="/public/images/resume.png" alt="Album" />
+                </figure>
       
                 <div class="card-body lg:max-xl:px-1 lg:w-2/3">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central
-                    Florida. </p>
+                  <h2 class="card-title">Resume</h2>
+                  <p class="text-left pb-2">One job plz. One job plz. One job plz. One job plz. </p>
+
                   <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
+                    <a href="https://drive.google.com/file/d/1lmUmLammboA2IemmQfAYd6Vpi23OWe0E/view?usp=sharing" class="btn btn-primary ">View</a>
+
+                    <a href="/public/files/Hyres-Daniel-Resume.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i></a>
                   </div>
                 </div>
               </div>
-      
             </div>
           </div>
         </div>
-      
       </div>
-
-
-    </div>
-    <!-- End Carousel Container -->
-
-    <!-- Content Container -->
-    <div class="p-1 lg:px-5 flex justify-center text-center bg-base-100 ">
-
-    </div>
-    <!-- End Content Container -->
-
-    <!-- Card Phone test Container -->
-    <div class="p-1 lg:px-20 flex justify-center text-center bg-base-100">
-
-      <div class="">
-
-        <div class="mockup-phone lg:rotate-[-90deg] ">
+      
+      <!-- HORIZONTAL PHONES FOR SM AND BIGGER -->
+      
+      <div class="text-center items-start hidden sm:block pt-4 pb-6 sm:rotate-[-90deg]">
+        
+        <div class="mockup-phone  ">
           <div class="camera"></div>
           <div class="display">
-            <div class="artboard artboard-demo phone-1">
-
-              <div class="card lg:card-side lg:w-[32rem] bg-base-100 shadow-xl lg:rotate-[90deg]">
-                <figure><img class="lg:max-xl:h-full" class="" src="/public/images/resume.png" alt="Album" /></figure>
-
-                <div class="card-body lg:max-xl:px-1 lg:w-2/3">
-                  <h2 class="card-title">Local's Barber Shop</h2>
-                  <p class="text-left pb-2">A responsive multipage website for a Barber Shop in the heart of Central
-                    Florida. </p>
+            <div class="artboard artboard-demo phone-1 ">
+              
+              <div class="card sm:card-side sm:w-[32rem] bg-base-100 shadow-xl sm:rotate-[90deg] rounded-[3rem] ">
+                <figure >
+                  <img class="h-fit " class="" src="/public/images/resume.png" alt="Album" />
+                </figure>
+                
+                <div class="card-body sm:max-xl:px-1 lg:w-2/3">
+                  <h2 class="card-title">Resume</h2>
+                  <p class="text-left pb-2">One job plz. One job plz. One job plz. One job plz. </p>
+                  
                   <div class="card-actions justify-center lg:pb-2">
-                    <button class="btn btn-primary">Listen</button>
-                    <a href="https://github.com/d-herz/SocialAyy" class="btn btn-primary"><i
-                        class="fa-brands fa-github text-xl"></i></a>
+                    <a href="https://drive.google.com/file/d/1lmUmLammboA2IemmQfAYd6Vpi23OWe0E/view?usp=sharing" class="btn btn-primary ">View</a>
+                    
+                    <a href="/public/files/Hyres-Daniel-Resume.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i></a>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-
       </div>
+      
+      <!-- <div class="max-w-[670px] items-start hidden sm:block pt-4 pb-6"> 
+         <div class="mockup-phone border-primary  ">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo artboard-horizontal phone-1">
 
-    </div>
-    <!-- End Card Phone test Container -->
-
+              <div class="card sm:card-side sm:w-[32rem] bg-base-100 shadow-xl ">
+                <figure>
+                  <img class="h-full" class="" src="/public/images/resume.png" alt="Album" />
+                </figure>
+              
+                <div class="card-body lg:max-xl:px-1 lg:w-2/3">
+                  <h2 class="card-title">Resume</h2>
+                  <p class="text-left pb-2">One job plz. One job plz. One job plz. One job plz. </p>
+              
+                  <div class="card-actions justify-center lg:pb-2">
+                    <a href="https://drive.google.com/file/d/1lmUmLammboA2IemmQfAYd6Vpi23OWe0E/view?usp=sharing"
+                      class="btn btn-primary ">View</a>
+              
+                    <a href="/public/files/Hyres-Daniel-Resume.pdf" class="btn btn-primary" download><i
+                        class="fa-solid fa-download"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Resume Container -->
   </main>
+
+  <!-- Footer using: Card Phone Container -->
+  <footer class="  lg:px-18 flex justify-center text-center bg-neutral">
+  
+    <div class="">
+  
+      <!-- Vertical for less than SM -->
+      <div class="mockup-phone sm:hidden w-screen">
+        <div class="camera"></div>
+  
+        <div class="display">
+          <div class="artboard artboard-demo phone-footer ">
+  
+            <div class="card bg-base-100 shadow-xl">
+  
+              <div class="card-body lg:max-xl:px-1 sm:hidden ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2022 - All rights reserved
+                </p>
+  
+                <div class="card-actions justify-center">
+  
+                  <a href="https://github.com/d-herz" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-github text-xl"></i>
+                  </a>
+  
+                  <a href="https://www.linkedin.com/in/daniel-hyres/" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+  
+                  <a href="https://twitter.com/danherz636" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+  
+                  <a href="https://youtube.com/@devlimiter" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+  
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- Horizontal for sm and above phone footer -->
+      <div class="mockup-phone hidden sm:inline-block w-[94vh] max-w-screen">
+        <div class="camera"></div>
+  
+        <div class="display justify-center">
+          <div class="artboard artboard-demo phone-footer">
+  
+            <div class="card bg-base-100 shadow-xl sm:card-side sm:w-[32rem] sm:rounded-[56px]">
+  
+              <div class="card-body lg:max-xl:px-1 sm:w-2/3  ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2022 - All rights reserved
+                </p>
+  
+                <div class="card-actions justify-center">
+  
+                  <a href="https://github.com/d-herz" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-github text-xl"></i>
+                  </a>
+  
+                  <a href="https://www.linkedin.com/in/daniel-hyres/" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+  
+                  <a href="https://twitter.com/danherz636" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+  
+                  <a href="https://youtube.com/@devlimiter" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+  
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 
 </body>
-
 </html>
