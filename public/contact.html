@@ -22,7 +22,7 @@
 <body class="min-h-screen">
   <!-- Navbar start -->
   <div class="navbar bg-neutral md:fixed z-20">
-
+  
     <div class="navbar-start">
       <!-- Mobile View w/dropdown hamburger -->
       <div class="dropdown">
@@ -31,12 +31,11 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-
+  
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-2 p-2 shadow bg-base-200 rounded-box w-39">
-
-
-          <li><a>Contact</a></li>
-
+  
+          <li><a href="/public/contact.html">Contact</a></li>
+  
           <li tabindex="0">
             <a>
               Journey
@@ -51,20 +50,20 @@
               <li><a href="/public/resume.html">Resume</a></li>
             </ul>
           </li>
-
+  
           <li><a href="/public/portfolio.html">Portfolio</a></li>
         </ul>
       </div>
       <a href="/public/index.html"
         class="btn btn-ghost normal-case text-xl font-shadows text-neutral-content ">WebDevDan.com</a>
     </div>
-
+  
     <!-- Expanded Display (hidden on mobile)-->
     <div class="navbar-center hidden md:flex text-neutral-content">
       <ul class="menu menu-horizontal p-0">
-
-        <li><a>Connect</a></li>
-
+  
+        <li><a href="/public/contact.html">Contact</a></li>
+  
         <li tabindex="0">
           <a>
             Journey
@@ -83,7 +82,7 @@
         <li><a href="/public/portfolio.html">Portfolio</a></li>
       </ul>
     </div>
-
+  
     <div class="navbar-end">
       <select data-choose-theme
         class="select select-primary pl-2 pr-5 sm:mr-4 mx-auto max-w-xs min-h-0 max-h-6 sm:max-h-8 text-xs sm:text-sm text-center">
@@ -95,7 +94,7 @@
         <option value="garden">Garden</option>
       </select>
     </div>
-
+  
   </div>
   <!-- End Navbar -->
 
@@ -105,40 +104,40 @@
     <!-- Header Container -->
     <div class="p-5 pb-0 lg:px-20 flex-col justify-center bg-base-300   ">
       <div class="text-center bg-base-100">
-        <h1 class="tracking-wider text-lg font-shadows">Contact <i class="fa-solid fa-folder-open"></i></h1>
+        <h1 class="tracking-wider text-lg font-shadows">Contact <i class="fa-solid fa-paper-plane"></i></h1>
       </div>
     </div>
     <!-- End Header Container -->
 
     <!-- Contact form Container -->
-    <div class="px-10 py-5 flex text-center justify-center ">
+    <div class=" px-10 sm:px-24 py-5 flex text-center justify-center sm:min-h-[600px]">
 
       <div class="w-full">
 
-        <form method="post" action="#" netlify class="  " >
+        <form method="post" action="#" netlify class=" text-base-content font-shadows tracking-widest" >
           
           <!-- <h2 class="text-2xl font-bold">Let's get in touch:</h2> -->
 
           <div class="w-full ">
-            <div class="grid grid-cols-1 gap-4">
+            <div class="grid gap-4">
 
               <label class="text-left" for="fName">
-                <span class="text-gray-700">Full Name:</span>
-                <input type="text" id="fName" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="Name" />
+                <span class="">Full Name:</span>
+                <input type="text" id="fName" class="mt-1 block w-full rounded-md bg-gray-100 border-primary-content focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="Name" />
               </label>
 
               <label class="text-left" for="email">
-                <span class="text-gray-700">Email Address:</span>
+                <span class="">Email Address:</span>
                 <input type="email" id="email" class=" mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="Email" />
               </label>
 
               <label class="text-left" for="subject">
-                <span class="text-gray-700">Subject:</span>
+                <span class="">Subject:</span>
                 <input type="text" id="subject" class=" mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="Subject" />
               </label>
 
               <label class="text-left" for="message">
-                <span class="text-gray-700">Additional details:</span>
+                <span class="">Additional details:</span>
                 <textarea name="message" class=" mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" rows="3" placeholder="Message"></textarea>
               </label>
 
@@ -155,12 +154,12 @@
 
             </div>
 
-            <div class=" ">
-              <ul class="actions flex justify-center">
-                <li>
+            <div class="w-full ">
+              <ul class="actions flex justify-center mt-3">
+                <li class="mx-2">
                   <input type="submit" class="primary btn " value="Send Message" />
                 </li>
-                <li>
+                <li class="mx-2">
                   <input type="reset" class="btn" value="Reset Form" /></li>
               </ul>
             </div>
@@ -199,16 +198,9 @@
             </div>
           </form>
         </div> -->
-
-
-
-
       </div>
-
-      
     </div>
     <!-- End Content Container -->
-
   </main>
 
   <!-- Footer/Card-Phone Container -->
