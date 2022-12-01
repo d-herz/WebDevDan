@@ -15,7 +15,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('@tailwindcss/forms')({
+      strategy: 'class',
+    }),
+  ],
   daisyui: {
     themes: ["luxury", "corporate", "cyberpunk", "garden"],
     darkTheme: "luxury",

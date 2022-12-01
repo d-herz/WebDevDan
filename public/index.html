@@ -22,7 +22,7 @@
 <body>
 
   <!-- Navbar start -->
-  <div class="navbar bg-neutral md:fixed z-10">
+  <div class="navbar bg-neutral md:fixed z-20">
 
     <div class="navbar-start">
       <!-- Mobile View w/dropdown hamburger -->
@@ -36,7 +36,7 @@
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-2 p-2 shadow bg-base-200 rounded-box w-39">
 
           
-          <li><a>Contact</a></li>
+          <li><a href="/public/contact.html">Contact</a></li>
 
           <li tabindex="0">
             <a>
@@ -309,12 +309,12 @@
   </main>
   
   <!-- Footer/Card-Phone Container -->
-  <footer class="  lg:px-18 flex justify-center text-center bg-neutral">
+  <footer class="p-1 lg:px-16 flex justify-center text-center bg-neutral">
 
     <div class="">
 
       <!-- Vertical for less than SM -->
-      <div class="mockup-phone sm:hidden w-screen">
+      <div class="mockup-phone w-[95vw]"> <!--deleted sm:hidden-->
         <div class="camera"></div>
 
         <div class="display">
@@ -322,7 +322,7 @@
     
             <div class="card bg-base-100 shadow-xl">
     
-              <div class="card-body lg:max-xl:px-1 sm:hidden ">
+              <div class="card-body lg:max-xl:px-1  ">
                 <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
                 <p class="font-bold font-shadows">
                   Copyright © 2022 - All rights reserved
@@ -354,7 +354,8 @@
 
 
       <!-- Horizontal for sm and above phone footer -->
-      <div class="mockup-phone hidden sm:inline-block w-[94vh] max-w-screen">
+      <!-- Don't think we need 2 here -->
+      <!-- <div class="mockup-phone hidden w-[94vw] max-w-screen">  deleted: sm:inline-block 
         <div class="camera"></div>
       
         <div class="display justify-center">
@@ -392,7 +393,7 @@
       
           </div>
         </div>
-      </div>
+      </div> -->
     
     </div>
   

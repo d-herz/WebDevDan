@@ -22,7 +22,7 @@
 <body>
 
   <!-- navbar start -->
-  <div class="navbar bg-neutral md:fixed z-10">
+  <div class="navbar bg-neutral md:fixed z-20">
   
     <div class="navbar-start">
       <!-- Mobile View w/dropdown hamburger -->
@@ -73,7 +73,7 @@
               <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
             </svg>
           </a>
-          <ul tabindex="0" class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40">
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40 text-base-content">
             <li><a href="/public/about.html">About</a></li>
             <li><a href="/public/blog.html">Blog</a></li>
             <li><a href="/public/lectures.html">Lectures</a></li>
@@ -106,7 +106,6 @@
     <div class="p-5 pb-0 lg:px-20 flex-col justify-center bg-base-100   ">
       <div class="text-center bg-base-300">
         <h1 class="tracking-wider text-lg font-shadows">Portfolio <i class="fa-solid fa-folder-open"></i></h1>
-        <!-- <i class="fa-solid fa-person-snowboarding"></i> -->
       </div>
     </div>
     <!-- End Header Container -->
@@ -228,12 +227,13 @@
   </main>
 
   <!-- Footer using: Card Phone Container -->
-  <footer class="  lg:px-18 flex justify-center text-center bg-neutral">
+  <footer class="p-1 lg:px-16 flex justify-center text-center bg-neutral">
   
     <div class="">
   
       <!-- Vertical for less than SM -->
-      <div class="mockup-phone sm:hidden w-screen">
+      <div class="mockup-phone w-[95vw]">
+        <!--deleted sm:hidden-->
         <div class="camera"></div>
   
         <div class="display">
@@ -241,49 +241,7 @@
   
             <div class="card bg-base-100 shadow-xl">
   
-              <div class="card-body lg:max-xl:px-1 sm:hidden ">
-                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
-                <p class="font-bold font-shadows">
-                  Copyright © 2022 - All rights reserved
-                </p>
-  
-                <div class="card-actions justify-center">
-  
-                  <a href="https://github.com/d-herz" class="btn btn-ghost text-primary"><i
-                      class="fa-brands fa-github text-xl"></i>
-                  </a>
-  
-                  <a href="https://www.linkedin.com/in/daniel-hyres/" class="btn btn-ghost text-primary"><i
-                      class="fa-brands fa-linkedin text-xl"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/danherz636" class="btn btn-ghost text-primary"><i
-                      class="fa-brands fa-twitter text-xl"></i>
-                  </a>
-  
-                  <a href="https://youtube.com/@devlimiter" class="btn btn-ghost text-primary"><i
-                      class="fa-brands fa-youtube text-xl"></i>
-                  </a>
-  
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </div>
-  
-  
-      <!-- Horizontal for sm and above phone footer -->
-      <div class="mockup-phone hidden sm:inline-block w-[94vh] max-w-screen">
-        <div class="camera"></div>
-  
-        <div class="display justify-center">
-          <div class="artboard artboard-demo phone-footer">
-  
-            <div class="card bg-base-100 shadow-xl sm:card-side sm:w-[32rem] sm:rounded-[56px]">
-  
-              <div class="card-body lg:max-xl:px-1 sm:w-2/3  ">
+              <div class="card-body lg:max-xl:px-1  ">
                 <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
                 <p class="font-bold font-shadows">
                   Copyright © 2022 - All rights reserved
@@ -319,6 +277,7 @@
   
   
   </footer>
+  
 
 
 
