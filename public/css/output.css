@@ -2817,6 +2817,15 @@ h2{
     width: 36rem;
   }
 
+  .sm\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-\[32rem\] {
     width: 32rem;
   }
@@ -2842,6 +2851,10 @@ h2{
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .sm\:text-sm {
@@ -2882,9 +2895,18 @@ h2{
   }
 
   @media not all and (min-width: 1280px) {
+    .sm\:max-xl\:h-full {
+      height: 100%;
+    }
+
     .sm\:max-xl\:px-1 {
       padding-left: 0.25rem;
       padding-right: 0.25rem;
+    }
+
+    .sm\:max-xl\:px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .sm\:max-xl\:pl-2 {
@@ -2939,42 +2961,6 @@ h2{
     padding-bottom: 0.5rem;
   }
 
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .lg\:card-side {
-    align-items: stretch;
-    flex-direction: row;
-  }
-
-  .lg\:card-side :where(figure:first-child) {
-    overflow: hidden;
-    border-start-start-radius: inherit;
-    border-start-end-radius: unset;
-    border-end-start-radius: inherit;
-    border-end-end-radius: unset;
-  }
-
-  .lg\:card-side :where(figure:last-child) {
-    overflow: hidden;
-    border-start-start-radius: unset;
-    border-start-end-radius: inherit;
-    border-end-start-radius: unset;
-    border-end-end-radius: inherit;
-  }
-
-  .lg\:card-side figure > * {
-    max-width: unset;
-  }
-
-  :where(.lg\:card-side figure > *) {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   @media not all and (min-width: 1280px) {
     .lg\:max-xl\:h-full {
       height: 100%;
@@ -2983,11 +2969,6 @@ h2{
     .lg\:max-xl\:px-1 {
       padding-left: 0.25rem;
       padding-right: 0.25rem;
-    }
-
-    .lg\:max-xl\:px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
   }
 }
