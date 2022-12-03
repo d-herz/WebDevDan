@@ -2844,6 +2844,10 @@ h2{
     border-radius: 56px;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
