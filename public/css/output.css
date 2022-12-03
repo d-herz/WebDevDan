@@ -2317,6 +2317,10 @@ h2{
   margin-top: 0.25rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -2876,6 +2880,10 @@ h2{
     .sm\:max-xl\:px-1 {
       padding-left: 0.25rem;
       padding-right: 0.25rem;
+    }
+
+    .sm\:max-xl\:pl-2 {
+      padding-left: 0.5rem;
     }
   }
 }
