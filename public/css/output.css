@@ -2784,6 +2784,11 @@ h2{
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .sm\:mr-4 {
     margin-right: 1rem;
   }
@@ -2891,11 +2896,6 @@ h2{
 @media (min-width: 768px) {
   .md\:fixed {
     position: fixed;
-  }
-
-  .md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
   }
 
   .md\:flex {
