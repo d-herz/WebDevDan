@@ -58,7 +58,7 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 
 <ul>
 <li> 'Featured Projects' Carousel </li>
-<li> Continuous Deployment CD/CI through Netlify & Github  </li>
+<li> Continuous Deployment with Netlify & Github  </li>
 <li> 'Lecture' page </li>
 <li> 'Blog' page</li>
 <!----- <li> </li> ---->
