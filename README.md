@@ -22,7 +22,7 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 <h4 align="left" >Menu & Contact form: </h4>
 
 <p align="center">
-  <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/menus.png" alt="Light-mode example" width= "375" height="auto"   />
+  <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/menu.png" alt="Light-mode example" width= "375" height="auto"   />
   <span>&nbsp;&nbsp;&nbsp;&nbsp;   </span>
   <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/contact.png" alt="Dark mode example" width= "375" height="auto"   />
 </p>
@@ -30,7 +30,7 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 <h4 align="left" >Lecture & Resume page: </h4>
 
 <p align="center">
-  <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/lectures.png" alt="Light-mode example" width= "375" height="auto"   />
+  <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/lecture.png" alt="Light-mode example" width= "375" height="auto"   />
   <span>&nbsp;&nbsp;&nbsp;&nbsp;   </span>
   <img src="https://github.com/d-herz/WebDevDan/blob/main/public/images/readme/resume.png" alt="Dark mode example" width= "375" height="auto"   />
 </p>
