@@ -2977,6 +2977,11 @@ h2{
   }
 
   @media not all and (min-width: 1280px) {
+    .lg\:max-xl\:h-fit {
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+
     .lg\:max-xl\:h-full {
       height: 100%;
     }
