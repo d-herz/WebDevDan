@@ -2337,6 +2337,10 @@ h2{
   margin-top: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -2604,6 +2608,10 @@ h2{
   text-align: justify;
 }
 
+.indent-8 {
+  text-indent: 2rem;
+}
+
 .font-shadows {
   font-family: "Shadows Into Light", cursive;
 }
@@ -2632,12 +2640,21 @@ h2{
   line-height: 2rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .normal-case {
   text-transform: none;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-wider {
@@ -2666,6 +2683,10 @@ h2{
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow {
@@ -2855,6 +2876,11 @@ h2{
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .sm\:pt-10 {
