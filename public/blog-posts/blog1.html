@@ -122,7 +122,8 @@
       <!-- Blog  -->
       <div class="w-full ">
         <header class="text-center">
-          <h1 class="font-shadows tracking-wider text-2xl">The Holy Trinity of Web Development</h1>
+          <h1 class="font-shadows tracking-wider text-2xl">The Holy Trinity of Web Development: </h1>
+          <h1 class="font-shadows tracking-wider text-xl">HTML, CSS, and JavaScript.</h1>
           <h2 class="mt-0 text-sm ">"The framer, the decorator, and the electrician"</h2>
           <span class=" italic text-xs">December 16th, 2022</span>
         </header>
@@ -136,81 +137,82 @@
           should have a pretty good idea of what makes each language special and how they fit into the world of web development.
         </p>
 
-        <h1 class="text-center font-bold underline">HTML 5: The Framer</h1>
+        <h1 class="text-center font-bold underline">HTML: The Framer</h1>
         <p class="text-justify m-5 mt-2 indent-8">
-          HTML, or <a href="https://en.wikipedia.org/wiki/HTML">“Hyper Text Markup Lanuage”</a> is the foundation for any web page. It's not a programming language and it
+          HTML, or <a href="https://en.wikipedia.org/wiki/HTML">“Hyper Text Markup Lanuage”</a>, is the foundation for any web page. It's not a programming language and it
           does not have any functionality on its own. Instead, it's a way to define the <em>content</em> and <em>structure</em> of a web page. This
           is achieved through the use of HTML “tags” which, when paired with content, are collectively referred to as HTML
           <em>elements</em>. The various tags assign semantic meaning as to how the content should be recognized and interpreted by things
-          like web browsers, CSS style-sheets, and even assistive technologies like screenreaders. When writing HTML, it is
+          like web browsers, CSS style-sheets, and even assistive technologies such as screenreaders. When writing HTML it is
           important to think about the intention of each piece of content as well as how it exists in relation to the other
           content on the page. Is it a paragraph? An image? A button? Does it live in the page header? The footer? Somewhere in
           between? This is all determined by the type of HTML tags used and their respective placement in the HTML file. It can be thought of
           as the unstyled "framing" of a webpage and it's content.
         </p>
-        <img class="mx-auto mt-0 mb-0" src="/public/blog-posts/htmlexample.png" alt="HTML tags example">
+        <img class="mx-auto mt-0 mb-0" src="/blog-posts/htmlexample.png" alt="HTML tags example">
         <span class="block text-center text-xs mx-auto mb-3 italic">Example HTML Code</span>
 
-        <h1 class="text-center font-bold underline">CSS3: The Painter</h1>
+        <h1 class="text-center font-bold underline">CSS: The Painter</h1>
         <p class="text-justify m-5 mt-2 indent-8">
-          CSS stands for <a href="https://en.wikipedia.org/wiki/CSS">"Cascading Style Sheets"</a>. It's a language used to <em>style</em> pages. At a base level the most important thing to understand about CSS is that it can be used to change colors, sizes and shapes of HTML elements, and other properties such as text styles and background images. These styles are applied through
-          an external CSS file which is referenced in the
-          
-          head element of the associated HTML document. The styles, or in CSS terms, “rules”, inform the browser how elements of
-          the HTML document should be rendered. Inside the CSS file, HTML elements are targeted using things like their HTML tag
+          CSS stands for <a href="https://en.wikipedia.org/wiki/CSS">"Cascading Style Sheets"</a> and it's a language used to <em>style</em> webpages. While not neccesarily required, a website without CSS styling would just be unstyled black text on a white background (boring!). At a base level the most important thing to understand about CSS is that it is used to control exactly how HTML elements will look in the browser. How the elements are styled, laid out, and presented, is all controlled with a CSS file and the code within. This includes defining things like sizes and shapes of elements, colors, text-properties including text-height and font choice, spacing like margin and padding, and much more. These styles are applied through an external CSS file which is referenced in the head element of the associated HTML document. The styles, or "rules", in CSS terms, inform the browser how elements of the HTML document should be rendered and displayed on the screen. Inside the CSS file, HTML elements are targeted using things like their HTML tag
           type, class or ID attribute, or even their relation to the <a href="https://www.geeksforgeeks.org/css-child-vs-descendant-selectors/">elements around them</a> (i.e. parent/child/sibling relationships). CSS styles are
           intrepeted based on <em>importance</em>, and, due to it's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">'cascading'</a> algorithm, order of appearance. You can declare
           generic styles to be broadly applied across a whole page (such as the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">font-family</a> for text), styles for elements that
           share a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">tag type</a> (e.g. useful for sections that share consistent styles), for elements that share certain properties
           (like a certain class atrribute or relationship to other elements), or even highly specific individual elements. It is possible to overwrite
-          the broader style rules by using selectors that assign more importance, or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">'specificity'</a>, to a style rule. If you
-          needed to target a specific element such as one particular paragraph, yet you'd already applied styles to all the
-          paragraphs, you could easily apply the special styles by using “heavier”, or more “specific” selectors that will
-          target this paragraph element and tell CSS these styles are more important than other styles that also apply to the
-          element. In terms of the Holy Trinity, CSS can be thought of as the ”painter”.
+          the broader style rules by using selectors that assign more importance, or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">'specificity'</a>, to a style rule. Say you've already applied general styles to all of the paragraphs on a page, but then decided that one particular paragraph needed additional styling unique only to it.
+          You could overwrite the general styles by using “heavier”,  more “specific” selectors that would
+          target this paragraph element and tell CSS these styles are more important than the other applied styles for paragraphs. CSS would then know to overwrite them with the unique styles. When CSS is ready to display the final visual representation of the HTML document on the screen, it is referred to as "painting" ("re-painting", when a page is refreshed). This is why I like to think of CSS as the ”painter”.
         </p>
-        <img class="mx-auto mt-0 mb-0" src="/public/blog-posts/cssexample.png" alt="CSS Code example">
-        <span class="block text-center text-xs mx-auto mb-3 italic">Example CSS Code that targets an 'h1' tag located in a 'header' tag</span>
+        <img class="mx-auto mt-0 mb-0" src="/blog-posts/cssexample.png" alt="CSS Code example">
+        <span class="block text-center text-xs mx-auto mb-3 italic">Example CSS Code that targets an 'h1' tag nested in a 'header' tag</span>
 
         <h1 class="text-center font-bold underline">JavaScript: The Electrician</h1>
         <p class="text-justify m-5 mt-2 mb-1 indent-8">
           You may have heard about JavaScript, but what is it? JavaScript is a programming language that allows developers to
           create dynamic web applications. It's used for front-end development, back-end development, and mobile development, and
-          is considered the programming language of web browsers. You can use JavaScript to assign programmatic logic and
-          establish interactivity or “behavior” on a page. What does that mean? Well, maybe something like accepting a
+          is considered <em>the</em> programming language of web browsers. You can use JavaScript to assign programmatic logic and
+          establish interactivity, or “behavior”, on a page. What does that mean? Well, maybe something like accepting a
           user-supplied value from a form when a button is clicked. Then taking that input value and running it through a function
-          that performs some calculation on it and returns the result to a different text field for the user. This is where
-          JavaScript comes in. HTML can put a form and a button on the page, and CSS can make them look great, but of this trio
-          only JavaScript can be used to write the logic and algorithms that add interactivity and functionality to a page. There
-          are many uses for JavaScript in this context. It can also be used to display or hide content based on one or more conditions, or to add other dynamic properties to HTML elements that will change their appearance (usually upon some user triggered “event” such as a mouse click or button press).
+          that performs some calculation on it which then returns the result to a different text field for the user. This is where
+          JavaScript comes in. HTML can put a form with a button on the page, and CSS can make them look great, but it is only JavaScript that can be used to write the logic that would listen for the button click and take the input value and do something with it. There are many uses for JavaScript in this context that add interactivity and functionality to a page. It could be used to display or hide content based on one or more conditions, or to add other dynamic properties to HTML elements that will change their appearance (usually upon some user-triggered “event” such as a mouse click or button press). From the client-side it can also <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">'fetch'</a> data from a server which could then be parsed for use or display in the HTML document.
         </p>
+        <img class="mx-auto mt-0 mb-0" src="/blog-posts/fetch.png" alt="JavaScript Fetch example">
+        <span class="block text-center text-xs mx-auto mb-1 italic">Example of the 'fetch' API being used for a frontend request
+        </span>
         <p class="text-justify m-5 mt-0 indent-8">
-          And these are mostly front-end examples! In a back-end server-side context, JavaScript is used to write code that can
+          And these are just front-end examples! In a back-end server-side context, JavaScript is used to write code that can
           listen for server requests and send responses accordingly. It is where you tell the server which database to use, and
           whether to create, read, update, or delete something (aka <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete#:~:text=In%20computer%20programming%2C%20create%2C%20read,computer%2Dbased%20forms%20and%20reports">CRUD</a>operations). It is used to “wire-up” a server and
           database, so to speak, which is why I like to think about it as the “electrician”. Developers love JavaScript because it
           allows us to write code for both the front-end and back-end using the same language.
         </p>
-        <img class="mx-auto mt-0 mb-0" src="/public/blog-posts/jsexample.png" alt="CSS Code example">
+        <img class="mx-auto mt-0 mb-0" src="/blog-posts/jsexample.png" alt="JavaScript Code example">
         <span class="block text-center text-xs mx-auto mb-3 italic">Example JavaScript code; a solution to the infamous "FizzBuzz" interview question</span>
         
         <h1 class="text-center font-bold underline">Final Thoughts</h1>
         <p class="text-justify m-5 mt-2 indent-8">
-          Today we have seen why I consider HTML, CSS and JavaScript to be the "Holy Trinity of Web Development". Each of these languages is concerned with a different yet
-          crucial purpose in building dynamic web sites and applications that look and perform well. We use our HTML for organizing and structuring our content, we write CSS for styling the HTML, and we rely on our 
-          JavaScript files for adding behavior, functionality, and interactivity. You'd be hard pressed to get a job as a web
-          developer without understanding these three technologies, and today we have barely skimmed the surface. I hope you enjoyed today's article and if you would like to learn more I'd encourage you to check out some of my favorite resources which I have shared below. Also, be sure to checkout the @DevLimiter Youtube channel for future additional content on getting started in web development.
+          Today we have seen the reasons why I consider HTML, CSS, and JavaScript to be the “Holy Trinity of Web Development”. We have
+          HTML for organizing and structuring our content, CSS for styling the HTML, and JavaScript for adding behavior,
+          functionality, and interactivity. These 3 languages alone are responsible for the overwhelming majority of websites on
+          the internet today. In fact, it is fair to say that 100% of websites rely on HTML, over 96% of all websites use CSS, and
+          over 97% of all websites use JavaScript for client-side programming. You'd be hard pressed to get a job as a web
+          developer without understanding these three technologies and how they work together. I sincerely hope you have enjoyed
+          today's article and have gained some high-level insight into the world of web development. If you're feeling even more
+          curious, I would encourage you to check out some of my favorite free resources for learning more about web development which I have
+          shared below. Also, be sure to checkout the @DevLimiter Youtube channel for future additional content on getting started in web
+          development.
         </p>
-        <p class="text-center m-5 mb-2">Thanks for Reading! </p>
+        <p class="text-center m-5 mb-2">Thanks for Reading! :) </p>
         <h1 class="text-center m-5 mt-0 tracking-widest font-shadows">WebDevDan, Fullstack Software Engineer.</h1>
       </div>   
          <!--End Article  -->
 
       <div class="text-center px-6 sm:px-20 py-5">
-        <h1 class="font-bold underline">Additional Resources:</h1>
+        <h1 class="font-bold underline">Additional Free Resources:</h1>
         <ul class="text-left">
           <li><a href="https://www.codecademy.com/learn/learn-css">
-            Code Academy: Learn CSS
+            Code Academy
           </a></li>
           <li><a href="https://www.freecodecamp.org/">
             FreeCodeCamp.org
