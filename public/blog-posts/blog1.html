@@ -157,7 +157,7 @@
 
         <h1 class="text-center font-bold no-underline text-primary">CSS: The Painter</h1>
         <p class="text-justify mx-5 my-2 indent-8">
-          CSS stands for <a class="text-success" href="https://en.wikipedia.org/wiki/CSS">"Cascading Style Sheets"</a> and it's a language used to <em>style</em> webpages. It's not required to have, but a website without CSS styling would just be unstyled black text on a white background (boring! But they do exist (mfer website)). At a base level the most important thing to understand about CSS is that it is used to control exactly how HTML elements will look in the browser. How the elements are styled, laid out, and presented, is all controlled with a CSS file and the code within. This includes defining things like sizes and shapes of elements, colors, text-properties including text-height and font choice, spacing like margin and padding, and much more. These styles are applied through an external CSS file which is referenced in the head element of the associated HTML document. The styles, or "rules", in CSS terms, inform the browser how elements of the HTML document should be rendered and displayed on the screen. Inside the CSS file, HTML elements are targeted with "selectors" that relate to HTML properties such as tag-types, class or ID attributes, or even <a class="text-success" href="https://www.geeksforgeeks.org/css-child-vs-descendant-selectors/">relation</a> to other elements (i.e. parent/child/sibling relationships). 
+          CSS stands for <a class="text-success" href="https://en.wikipedia.org/wiki/CSS">"Cascading Style Sheets"</a> and it's a language used to <em>style</em> webpages. It's not required to have, but a website without CSS styling would just be unstyled black text on a white background (boring! But they do <a class="text-success" href="https://motherfuckingwebsite.com/">exist</a> (NSFW: explicit language)). At a base level the most important thing to understand about CSS is that it is used to control exactly how HTML elements will look in the browser. How the elements are styled, laid out, and presented, is all controlled with a CSS file and the code within. This includes defining things like sizes and shapes of elements, colors, text-properties including text-height and font choice, spacing like margin and padding, and much more. These styles are applied through an external CSS file which is referenced in the head element of the associated HTML document. The styles, or "rules", in CSS terms, inform the browser how elements of the HTML document should be rendered and displayed on the screen. Inside the CSS file, HTML elements are targeted with "selectors" that relate to HTML properties such as tag-types, class or ID attributes, or even <a class="text-success" href="https://www.geeksforgeeks.org/css-child-vs-descendant-selectors/">relation</a> to other elements (i.e. parent/child/sibling relationships). 
         </p>
         <p class="text-justify mx-5 my-2 indent-8">
           CSS styles are
@@ -173,14 +173,21 @@
         <span class="block text-center text-xs mx-auto mb-8 italic">Example CSS code targeting an 'h1' tag nested in a 'header' tag</span>
 
         <h1 class="text-center font-bold no-underline text-primary">JavaScript: The Electrician</h1>
-        <p class="text-justify mx-5 my-2 indent-8">
+        <p class="text-justify mx-5 mt-2 indent-8">
           You may have heard about <a class="text-success" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, but <a class="text-success" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#:~:text=JavaScript%20is%20a%20scripting%20or,3D%20graphics%2C%20scrolling%20video%20jukeboxes%2C">what is it</a>? JavaScript is a programming language that allows developers to
           create dynamic web applications. It's used for front-end development, back-end development, and mobile development, and
           is considered <em>the</em> programming language of web browsers. You can use JavaScript to assign programmatic logic and
           establish interactivity, or “behavior”, on a page. What does that mean? Well, maybe something like accepting a
           user-supplied value from a form when a button is clicked. Then taking that input value and running it through a function
           that performs some calculation on it which then returns the result to a different text field for the user. This is where
-          JavaScript comes in. HTML can put a form with a button on the page, and CSS can make them look great, but it is only JavaScript that can be used to write the logic that would listen for the button click and then take the input value and do something with it. There are many uses for JavaScript in this context that add interactivity and functionality to a page. It could be used to hide or display content based on one or more conditions or to add other dynamic properties that will change their appearance of HTML elements (usually upon some user-triggered “event” such as a mouse <button class="text-success" id="exampleEvent1" href="">click</button> or button <button class="text-success" id="exampleEvent2" href="">press</button>). From the client-side it can also <a class="text-success" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">'fetch'</a> data from a server which could then be parsed for use or display in the HTML document.
+          JavaScript comes in. HTML can put a form with a button on the page, and CSS can make them look great, but it is only JavaScript that can be used to write the logic that would <em>listen</em> for the button click and then take the input value and do something with it. 
+        </p>
+        <div class="my-1 flex justify-center">
+          <button class="btn btn-secondary text-neutral-content font-shadows rounded-full"
+            id="exampleEvent1">Click me if you dare!</button>
+        </div>
+        <p class="text-justify m-5 mt-0 indent-8">
+          There are many uses for JavaScript in this context that add interactivity and functionality to a page. It could be used to hide or display content based on one or more conditions or to add other dynamic properties that will change their appearance of HTML elements (usually upon some user-triggered “event” such as a mouse click or button press). From the client-side it can also <a class="text-success" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">'fetch'</a> data from a server which could then be parsed for use or display in the HTML document.
         </p>
         <img class="mx-auto mt-0 mb-0 rounded border-2" src="/blog-posts/fetch.png" alt="JavaScript Fetch example">
         <span class="block text-center text-xs mx-auto mb-2 italic">Example of the 'fetch' API being used for a frontend request
@@ -211,8 +218,8 @@
         <h1 class="text-center m-5 mt-0 tracking-widest font-shadows">WebDevDan, Fullstack Software Engineer.</h1>
 
 
-
-        <div class="text-center px-6 sm:px-20 py-5">
+        <!-- Additional Resource Div -->
+        <div class="text-center px-6 sm:px-20 py-4">
           <h1 class="font-bold no-underline text-primary">Additional Free Resources:</h1>
           <ul class="">
             <li><a class="text-success" href="https://www.codecademy.com/learn/learn-css">
@@ -231,7 +238,10 @@
               Microsoft: Web Development for Beginners
             </a></li>
           </ul>
-  
+        </div>
+
+        <div class="my-3 flex justify-center">
+          <a class="btn glass btn-ghost text-xl text-neutral-content font-shadows rounded-full" href="/blog-posts/blog1.html">Back to Top</a>
         </div>
 
       </div>   
