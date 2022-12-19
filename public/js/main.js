@@ -4,5 +4,5 @@ document.querySelector('#exampleEvent2').addEventListener('click', userAlert)
 
 
 function userAlert() {
-  alert('This Alert Brought to you by JavaScript!')
+  alert('This alert brought to you by JavaScript!')
 }
