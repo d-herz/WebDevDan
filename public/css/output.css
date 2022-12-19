@@ -2373,10 +2373,6 @@ h2{
   margin-bottom: 0px;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -2512,6 +2508,10 @@ h2{
 
 .rounded-\[3rem\] {
   border-radius: 3rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-primary-content {
@@ -2753,6 +2753,11 @@ h2{
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-success {
+  --tw-text-opacity: 1;
+  color: hsl(var(--su) / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -3051,6 +3056,10 @@ h2{
 
   .md\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .md\:pt-2 {
+    padding-top: 0.5rem;
   }
 }
 
