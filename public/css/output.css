@@ -2871,6 +2871,10 @@ h2{
   color: hsl(var(--su) / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .no-underline {
   text-decoration-line: none;
 }
