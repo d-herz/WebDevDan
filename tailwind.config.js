@@ -22,7 +22,7 @@ module.exports = {
     }),
   ],
   daisyui: {
-    themes: ["luxury", "corporate", "cyberpunk", "garden"],
+    themes: ["luxury", "corporate", "garden", "light", "dark", "bumblebee", "retro", "valentine", "halloween", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
     darkTheme: "luxury",
   }
 }
