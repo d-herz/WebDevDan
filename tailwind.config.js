@@ -49,7 +49,8 @@ module.exports = {
           success: '#0AD49B',
         },
       },
-      "luxury", "corporate", "garden", "light", "dark", "bumblebee", "cupcake", "retro", "valentine", "halloween", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+      "luxury", "corporate", "garden", "light", "dark", "bumblebee", "cupcake", "retro", "valentine", "halloween", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter",
+    ],
     darkTheme: "darkDh",
   }
 }
