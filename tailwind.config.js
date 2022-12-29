@@ -34,7 +34,7 @@ module.exports = {
           "base-200": '#FFFFFF',
           "base-300": '#525252',
           "base-content": '#181A2A',
-          success: '#00D49B',
+          success: '#0AD49B',
         },
         darkDh: {
           primary: '#E1AA3D',
@@ -43,13 +43,13 @@ module.exports = {
           neutral: '#110E0E',
           "neutral-content": '#EDF2F7',
           "base-100": '#000000',
-          "base-200": '#525252',
+          "base-200": '#2B2A2C',
           "base-300": '#2B2A2C',
           "base-content": '#E1AA3D',
-          success: '#00D49B',
+          success: '#0AD49B',
         },
       },
       "luxury", "corporate", "garden", "light", "dark", "bumblebee", "cupcake", "retro", "valentine", "halloween", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
-    darkTheme: "luxury",
+    darkTheme: "dark",
   }
 }
