@@ -3392,10 +3392,6 @@ h2{
   margin-bottom: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3406,6 +3402,10 @@ h2{
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mb-4 {
