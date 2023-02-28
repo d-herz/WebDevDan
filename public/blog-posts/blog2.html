@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html data-theme="" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO meta tags -->
+  <meta name="description" content="HTML, CSS, and JavaScript: The Holy Trinity of Web Development">
+  <meta name="twitter:card" content="The three languages that every web developer should know well
+          enough to be productive in their day-to-day work.">
+  <!-- Script for example JS in this file only -->
+  <script src="/js/main.js" defer></script>
+
+  <title>WebDevDan.com - Cowsay!</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" class="text-primary" href="/images/favicons">
+  <link rel="icon" type="image/png" sizes="32x32" class="text-primary" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" class="text-primary" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" class="text-primary" href="/images/favicons/site.webmanifest">
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" class="text-primary" href="../css/output.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" class="text-primary" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Font-->
+  <link rel="preconnect" class="text-primary" href="https://fonts.googleapis.com">
+  <link rel="preconnect" class="text-primary" href="https://fonts.gstatic.com" crossorigin>
+  <link class="text-primary" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navbar start -->
+  <div class="navbar bg-neutral z-20">
+
+    <div class="navbar-start">
+      <!-- Mobile View w/dropdown hamburger -->
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost md:hidden text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-2 p-2 shadow bg-base-100 rounded-box w-39">
+
+          <li><a class="" href="/contact.html">Contact</a></li>
+
+          <li tabindex="0">
+            <a>
+              Journey
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+              </svg>
+            </a>
+            <ul class="p-2 ml-2 shadow bg-base-100 rounded-box w-39">
+              <li><a class="" href="/about.html">About</a></li>
+              <li><a class="" href="/blog.html">Blog</a></li>
+              <li><a class="" href="/lectures.html">Lectures</a></li>
+              <li><a class="" href="/resume.html">Resume</a></li>
+            </ul>
+          </li>
+
+          <li><a class="" href="/portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <a href="/index.html"
+        class="btn btn-ghost normal-case text-xl font-shadows text-neutral-content ">WebDevDan.com</a>
+    </div>
+
+    <!-- Expanded Display (hidden on mobile)-->
+    <div class="navbar-center hidden md:flex text-primary">
+      <ul class="menu menu-horizontal p-0">
+
+        <li><a class="" href="/contact.html">Contact</a></li>
+
+        <li tabindex="0">
+          <a>
+            Journey
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+              <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+          </a>
+          <ul tabindex="0"
+            class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40 text-base-content">
+            <li><a class="" href="/about.html">About</a></li>
+            <li><a class="" href="/blog.html">Blog</a></li>
+            <li><a class="" href="/lectures.html">Lectures</a></li>
+            <li><a class="" href="/resume.html">Resume</a></li>
+          </ul>
+        </li>
+        <li><a class="" href="/portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <select data-choose-theme
+        class="select select-primary pl-2 pr-5 mr-3 sm:mr-4 mx-auto max-w-xs min-h-0 max-h-6 sm:max-h-8 text-xs sm:text-sm text-center text-secondary-content">
+        <option disabled selected>Theme</option>
+        <!-- <option value="">Default</option> -->
+        <option value="lightDh">Light</option>
+        <option value="darkDh">Dark</option>
+      </select>
+    </div>
+
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Main Container -->
+  <main class="bg-base-300 md:pt-2 ">
+
+    <!-- Header Container -->
+    <div class="p-5 pb-0 lg:px-20 flex-col justify-center bg-base-300   ">
+      <div class="text-center bg-base-100">
+        <h1 class="tracking-wider text-secondary-content text-lg font-shadows">Blog #2 <i class="fa-solid fa-square-pen text-primary"></i></h1>
+      </div>
+    </div>
+    <!-- End Header Container -->
+
+    <!-- Blog Container -->
+    <div class=" px-6 sm:px-20 py-5 flex flex-col justify-center min-h-[325px] sm:min-h-[600px]">
+
+      <!-- Blog  -->
+      <div class="w-full rounded bg-neutral text-neutral-content pt-2">
+        <header class="text-center">
+          <h1 class="font-shadows tracking-wider text-2xl">Cowsay!</h1>
+          <h1 class="font-shadows tracking-wider text-xl">Linux Command Line Fun? </h1>
+          <h2 class="mt-0 text-sm ">Configurable talking Characters in ASCII art</h2>
+          <span class=" italic text-xs">February 25th, 2023</span>
+        </header>
+
+        <p class="first-line:uppercase first-line:tracking-widest first-line:text-primary first-letter:text-5xl first-letter:mr-2 first-letter:font-bold text-justify m-5 mt-0 mb-7 indent-8">
+          Cowsay is a fun and whimsical command-line program that has been around for decades in Linux systems that generates an ASCII art cow with speech or thought bubbles that
+          display messages. This program is an implementation of the Unix cowsay program originally written in Perl and can be installed on most distributions using the package manager (<a class="text-success underline" target="_blank" href="https://formulae.brew.sh/formula/cowsay">Homebrew</a>, in my case).
+        </p>
+
+        <h1 class="text-center font-bold no-underline text-primary">Syntax and Use</h1>
+        <p class="text-justify mx-5 my-2 indent-8">
+          The basic syntax for using cowsay is simple. In a terminal window, type "cowsay" followed by your message, and an ASCII art cow
+          will appear on your screen with your message in a speech bubble. For example, typing "cowsay Hello World!" will generate
+          the following output:
+          
+        </p>
+        <img class="mx-auto my-0 rounded border-2" src="/public/blog-posts/cowsay1.png" alt="cowsay hello world example">
+        <span class="block text-center text-xs mx-auto mb-8 italic">Hello, Cow!</span>
+
+        <h1 class="text-center font-bold no-underline text-primary">Additional Animals</h1>
+        <p class="text-justify mx-5 my-2 indent-8">
+          In addition to the standard cow, you can use the “-f” flag to access the many other animals and characters you can use
+          with cowsay, such as a cat, a block of cheese, a dragon, a turtle, and even a turkey. There are a ton to choose from and some seriously <em>wild</em> and ridiculous ones. To use a different animal, simply add the
+          "-f" flag followed by the corresponding name of the animal or character. For example, if you type 'cowsay -f duck "wheaint, I'm a duck!" ', a
+          duck will say "wheaint, I'm a duck!" in a speech bubble:
+        </p>
+        <img class="mx-auto my-0 rounded border-2" src="/public/blog-posts/cowsay2.png" alt="cowsay hello world example">
+        <span class="block text-center text-xs mx-auto mb-8 italic">Yes, you are!</span>
+
+        <p class="text-justify mx-5 my-2 indent-8">
+          Cowsay has a wide variety of other options that you can use to customize your cow and
+          speech bubble. You can change the size and position of the speech bubble, change the alignment of the text
+          within the speech bubble, and even make the cow say your message in a different language.
+        </p>
+        <img class="mx-auto my-0 rounded border-2" src="/public/blog-posts/cowsay3.png" alt="cowsay hello world example">
+        <span class="block text-center text-xs mx-auto mb-8 italic">Paarthurnax?</span>
+
+        <h1 class="text-center font-bold no-underline text-primary">Final Thoughts</h1>
+        <p class="text-justify mx-5 mt-2 indent-8">
+          Cowsay is a great way to add a bit of fun and personality to your command-line interactions, and also a great way to
+          lose a bunch of time exploring the hilarious ASCII implementations people have created over the years (some of which are NSFW). It's also a
+          useful tool for creating custom ASCII art messages for your friends or colleagues. Whether you're using it to entertain
+          yourself or to share a message with your friends and colleagues, cowsay is sure to bring a smile to your face. Try
+          experimenting with different animals and messages to see what you can come up with!
+        </p>
+        <img class="mx-auto my-0 rounded border-2" src="/public/blog-posts/cowsay4.png" alt="cowsay hello world example">
+        <span class="block text-center text-xs mx-auto mb-8 italic"></span>
+        
+        <p class="text-center m-5 mb-2">Thanks for Reading! :) </p>
+        <h1 class="text-center m-5 mt-0 tracking-widest font-shadows">WebDevDan, Fullstack Software Engineer.</h1>
+
+
+        <!-- Additional Resource Div -->
+        <div class="text-center px-6 sm:px-20 py-4">
+        </div>
+
+        <div class="my-3 flex justify-center">
+          <a class="btn glass btn-ghost text-xl text-neutral-content font-shadows rounded-full" href="/blog-posts/blog2.html">Back to Top</a>
+        </div>
+
+      </div>   
+         <!--End Article  -->
+
+      
+    </div>
+    <!-- End Blog Container -->
+  </main>
+
+  <!-- Footer: Card Container -->
+  <footer class="p-1 lg:px-16 flex justify-center text-center bg-neutral">
+
+    <div class="">
+
+      <div class="mockup-phone w-[95vw]">
+
+        <div class="camera"></div>
+
+        <div class="display">
+          <div class="artboard artboard-demo phone-footer ">
+
+            <div class="card bg-base-100 shadow-xl">
+
+              <div class="card-body lg:max-xl:px-1 text-secondary-content ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2023 - All rights reserved
+                </p>
+
+                <div class="card-actions justify-center">
+
+                  <a  href="https://github.com/d-herz" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-github text-xl"></i>
+                  </a>
+
+                  <a  href="https://www.linkedin.com/in/d-herz/" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+
+                  <a href="https://twitter.com/danherz636" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+
+                  <a href="https://youtube.com/@devlimiter" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+  
+
+</body>
+
+</html>
