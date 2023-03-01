@@ -3225,6 +3225,10 @@ h2{
   border-bottom-left-radius: unset;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3353,6 +3357,14 @@ h2{
   margin-bottom: 0px;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -3439,6 +3451,10 @@ h2{
 
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .-translate-y-1\/2 {
