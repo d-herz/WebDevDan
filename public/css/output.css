@@ -3365,6 +3365,10 @@ h2{
   margin-top: 1rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -3395,6 +3399,10 @@ h2{
 
 .h-full {
   height: 100%;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .max-h-6 {

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html data-theme="" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO meta tags -->
+  <meta name="description" content="Algorithmic Efficiency">
+  <meta name="twitter:card" content="Algorithmic Efficiency">
+  <!-- Script for example JS in this file only -->
+  <script src="/js/main.js" defer></script>
+
+  <title>WebDevDan.com - Algorithmic Efficiency</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" class="text-primary" href="/images/favicons">
+  <link rel="icon" type="image/png" sizes="32x32" class="text-primary" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" class="text-primary" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" class="text-primary" href="/images/favicons/site.webmanifest">
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" class="text-primary" href="../css/output.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" class="text-primary"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Font-->
+  <link rel="preconnect" class="text-primary" href="https://fonts.googleapis.com">
+  <link rel="preconnect" class="text-primary" href="https://fonts.gstatic.com" crossorigin>
+  <link class="text-primary" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <div class="navbar bg-neutral z-20">
+
+    <div class="navbar-start">
+      <!-- Mobile View w/dropdown hamburger -->
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost md:hidden text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-2 p-2 shadow bg-base-100 rounded-box w-39">
+
+          <li><a class="" href="/contact.html">Contact</a></li>
+
+          <li tabindex="0">
+            <a>
+              Journey
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+              </svg>
+            </a>
+            <ul class="p-2 ml-2 shadow bg-base-100 rounded-box w-39">
+              <li><a class="" href="/about.html">About</a></li>
+              <li><a class="" href="/blog.html">Blog</a></li>
+              <li><a class="" href="/lectures.html">Lectures</a></li>
+              <li><a class="" href="/resume.html">Resume</a></li>
+            </ul>
+          </li>
+
+          <li><a class="" href="/portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <a href="/index.html"
+        class="btn btn-ghost normal-case text-xl font-shadows text-neutral-content ">WebDevDan.com</a>
+    </div>
+
+    <!-- Expanded Display (hidden on mobile)-->
+    <div class="navbar-center hidden md:flex text-primary">
+      <ul class="menu menu-horizontal p-0">
+
+        <li><a class="" href="/contact.html">Contact</a></li>
+
+        <li tabindex="0">
+          <a>
+            Journey
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+              <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+          </a>
+          <ul tabindex="0"
+            class="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-40 text-base-content">
+            <li><a class="" href="/about.html">About</a></li>
+            <li><a class="" href="/blog.html">Blog</a></li>
+            <li><a class="" href="/lectures.html">Lectures</a></li>
+            <li><a class="" href="/resume.html">Resume</a></li>
+          </ul>
+        </li>
+        <li><a class="" href="/portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <select data-choose-theme
+        class="select select-primary pl-2 pr-5 mr-3 sm:mr-4 mx-auto max-w-xs min-h-0 max-h-6 sm:max-h-8 text-xs sm:text-sm text-center text-secondary-content">
+        <option disabled selected>Theme</option>
+        <!-- <option value="">Default</option> -->
+        <option value="lightDh">Light</option>
+        <option value="darkDh">Dark</option>
+      </select>
+    </div>
+
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Main Container -->
+  <main class="bg-base-300 md:pt-2 ">
+
+    <!-- Header Container -->
+    <div class="p-5 pb-0 lg:px-20 flex-col justify-center bg-base-300   ">
+      <div class="text-center bg-base-100">
+        <h1 class="tracking-wider text-secondary-content text-lg font-shadows">Blog #3 <i
+            class="fa-solid fa-square-pen text-primary"></i></h1>
+      </div>
+    </div>
+    <!-- End Header Container -->
+
+    <!-- Blog Container -->
+    <div class=" px-6 sm:px-20 py-5 flex flex-col justify-center min-h-[325px] sm:min-h-[600px]">
+
+      <!-- Blog  -->
+      <div class="w-full rounded bg-neutral text-neutral-content pt-2">
+        <header class="text-center">
+          <h1 class="font-shadows tracking-wider text-2xl">Algorithmic Efficiency</h1>
+          <h1 class="font-shadows tracking-wider text-xl">Big O, Omega, and Theta notations </h1>
+          <h2 class="mt-0 text-sm ">Analyzing the Asymptotic Behavior of Algorithms</h2>
+          <span class=" italic text-xs">March 5th, 2023</span>
+        </header>
+
+        <p
+          class="first-line:uppercase first-line:tracking-widest first-line:text-primary first-letter:text-5xl first-letter:mr-2 first-letter:font-bold text-justify m-5 mt-0 mb-4 indent-8">
+          As computer programs become increasingly complex and data sets continue to grow in size, it becomes more
+          important to
+          understand the performance characteristics of algorithms. This is where Big O notation, Omega notation, and
+          Theta
+          notation come in.
+        </p>
+        <h1 class="text-center font-bold no-underline text-primary">Big O, Omega, and Theta:</h1>
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          Big O notation, Omega notation, and Theta notation are all used to describe the time complexity of algorithms.
+          Time
+          complexity, or "running time", refers to the amount of time it takes for an algorithm to "run" or complete a
+          task as
+          the size of the input data
+          increases. By understanding time complexity, developers can make informed decisions about which algorithm to
+          use for a
+          particular task.
+        </p>
+        <h1 class="text-center font-bold no-underline text-primary">"Wave of the Hand" Approximations</h1>
+        <p class="text-justify mx-5 mt-1 indent-8">
+           You'll notice there are no smaller order terms referenced in any of the notations. This is a sort of formalized imprecision. When considering algorithmic efficiency developers don't <em>really</em> care about the exact details. These notations are not meant to describe the length of time or steps some algorithm will take <em>exactly</em>, but rather what it's <em>behavior</em> will look like as we approach the infinite limit of data input. It's <em>asymptotic behavior</em>. The shape of it's output curve - be it constant, linear, quadratic, cubic, and so on, as <em>n</em> gets <strong>really</strong> large, is what matters. 
+         </p>
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          In this context, a "wave of
+          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be, and that's what these
+          notations claim to tell us. Afterall, computer performance varies widely from machine to machine, and tends to increase overtime. Therefore it wouldn't really be that helpful to compare precise numbers.
+        </p>
+
+        <h1 class="text-center font-bold no-underline text-primary">Big O Notation:</h1>
+        <p class="text-justify mx-5 my-1 indent-8">
+          Big O notation is used to describe the upper-bound of an algorithm's time complexity. In other words, it
+          provides an
+          estimate of the <strong>worst-case</strong> scenario for how long an algorithm will take to complete a task.
+          As in, if every step of the algorithm needs to be taken, what would that look like? This is why Big O is
+          commonly the primary consideration when it comes to algorithms, as the worst-case scenario is often more of a
+          concern than the absolute best-case.
+        </p>
+
+        <p class="text-justify mx-5 my-2 indent-8">
+          Big O notation is expressed using the letter "O" followed by a function. The function describes the growth
+          rate of the
+          algorithm as the input size increases. For example, an algorithm with a time complexity of O(n) means that the
+          time it
+          takes to complete the task will increase linearly with the size of the input data. This would be described as
+          being "on the order of <em>n</em> steps".
+        </p>
+
+        <img class="mx-auto mt-4 rounded border-2 h-64" src="/blog-posts/bigo.webp" alt="">
+        <span class="block text-center text-xs mx-auto mb-8 italic">Big O Time Complexity Graph. Credit: Huang,
+          D.</span>
+
+        <h1 class="text-center font-bold no-underline text-primary">Omega Notation</h1>
+        <p class="text-justify mx-5 my-1 indent-8">
+          Omega notation is used to describe the lower-bound of the time complexity of an algorithm. It provides an
+          estimate of
+          the <strong>best-case</strong> scenario for how long an algorithm will take to complete a task. Say you wanted
+          to search an array for a value, and that value just happens to be found in the very first index searched. What
+          would that look like? Clearly that would be the most ideal case in that scenario.
+        </p>
+
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          Omega notation is expressed using the greek letter "Ω" followed by a function. The function describes the
+          lower-bound of the
+          algorithm as the input size increases. For example, an algorithm with a time complexity of Ω(n) means that the
+          time it
+          takes to complete the task will increase at least linearly with the size of the input data. The functions
+          denoted, and corresponding graphical representations used with Omega, are identical to the behvaiors
+          considered for Big O. It is important to consider both Big O and Omega to see how an algorithm will perform at
+          it's worst and best-case scenarios. Algorithms can have differing Big O and Omega behavior, or the same. In situations where the best and worst case efficiencies beahve the same, we use "Theta notation".
+        </p>
+        <!-- <img class="mx-auto my-0 rounded border-2" src="/blog-posts/cowsay2.png" alt="">
+        <span class="block text-center text-xs mx-auto mb-8 italic"></span> -->
+
+        <!-- <img class="mx-auto my-0 rounded border-2" src="/blog-posts/cowsay3.png" alt="">
+        <span class="block text-center text-xs mx-auto mb-8 italic"></span> -->
+
+        <h1 class="text-center font-bold no-underline text-primary">Theta Notation</h1>
+        <p class="text-justify mx-5 mt-1 indent-8">
+          Theta notation is used to describe both the upper and lower bounds of an algorithm's time complexity. It
+          represents the
+          tightest bound for an algorithm's time complexity. In other words, it describes how long an algorithm will
+          take to run
+          in both the best-case and worst-case scenarios, given a certain input size.
+        </p>
+
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          Theta notation is expressed using the gree letter "Θ" followed by a function. The function describes the
+          average-case
+          complexity of the algorithm as the input size increases. For example, an algorithm with a time complexity of
+          Θ(n) means
+          that the time it takes to complete the task will increase linearly with the size of the input data. Again, the
+          functions denoted and considered are represented graphically the same for Big O, Omega, and Theta notations.
+        </p>
+
+        <h1 class="text-center font-bold no-underline text-primary">Final Thoughts</h1>
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          In summary, Big O notation, Omega notation, and Theta notation are all used to describe the time complexity of
+          algorithms. Big O notation provides an upper bound on the time complexity, Omega notation provides a lower
+          bound, and
+          Theta notation provides a tight bound. By understanding these notations, developers can choose the most
+          efficient
+          algorithm for a given task and optimize their programs to run as efficiently as possible.
+        </p>
+
+        <!-- <img class="mx-auto my-0 rounded border-2" src="/blog-posts/cowsay4.png" alt="">
+        <span class="block text-center text-xs mx-auto mb-8 italic"></span> -->
+
+        <p class="text-center m-5 mb-2">Thanks for Reading! :) </p>
+        <h1 class="text-center m-5 mt-0 tracking-widest font-shadows">WebDevDan, Fullstack Software Engineer.</h1>
+
+
+        <!-- Additional Resource Div -->
+        <div class="text-center px-6 sm:px-20 py-4">
+        </div>
+
+        <div class="my-3 flex justify-center">
+          <a class="btn glass btn-ghost text-xl text-neutral-content font-shadows rounded-full"
+            href="/blog-posts/blog2.html">Back to Top</a>
+        </div>
+
+      </div>
+      <!--End Article  -->
+
+
+    </div>
+    <!-- End Blog Container -->
+  </main>
+
+  <!-- Footer: Card Container -->
+  <footer class="p-1 lg:px-16 flex justify-center text-center bg-neutral">
+
+    <div class="">
+
+      <div class="mockup-phone w-[95vw]">
+
+        <div class="camera"></div>
+
+        <div class="display">
+          <div class="artboard artboard-demo phone-footer ">
+
+            <div class="card bg-base-100 shadow-xl">
+
+              <div class="card-body lg:max-xl:px-1 text-secondary-content ">
+                <h2 class=" font-shadows text-center text-xl">WebDevDan.com</h2>
+                <p class="font-bold font-shadows">
+                  Copyright © 2023 - All rights reserved
+                </p>
+
+                <div class="card-actions justify-center">
+
+                  <a href="https://github.com/d-herz" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-github text-xl"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/d-herz/" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+
+                  <a href="https://twitter.com/danherz636" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+
+                  <a href="https://youtube.com/@devlimiter" target="_blank" class="btn btn-ghost text-primary"><i
+                      class="fa-brands fa-youtube text-xl"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+
+
+</body>
+
+</html>
