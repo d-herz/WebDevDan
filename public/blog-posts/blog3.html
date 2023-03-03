@@ -151,7 +151,7 @@
           complexity, or "running time", refers to the amount of time it takes for an algorithm to "run" or complete a
           task as
           the size of the input data
-          increases. By understanding time complexity, developers can make informed decisions about which algorithm to
+          increases. By understanding time complexity developers can make informed decisions about which algorithm to
           use for a
           particular task.
         </p>
@@ -161,8 +161,8 @@
          </p>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
           In this context, a "wave of
-          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be and that's what these
-          notations are used for. Afterall, computer performance tends to vary widely from machine to machine, and overtime performance capabilites typically improve. Therefore it wouldn't really make sense to compare precise numbers.
+          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be to base our decisions on and that's what these
+          notations are used for. Afterall, computer performance tends to vary widely from machine to machine and increase overtime. Therefore it wouldn't really make sense to compare precise numbers.
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Big O Notation:</h1>
@@ -215,13 +215,13 @@
         <p class="text-justify mx-5 mt-1 indent-8">
           Theta notation is used to describe both the upper and lower bounds of an algorithm's time complexity. It
           represents the
-          tightest bound for an algorithm's time complexity. In other words, it describes how long an algorithm will
+          tightest bound for an algorithm's time complexity as it describes how long an algorithm will
           take to run
-          in both the best-case and worst-case scenarios, given a certain input size.
+          in both the best-case and worst-case scenarios, given a certain input size. Theta notation only applies when both the Big O and Big Ω approximations are the same. In the above graphic this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps, and Merge-sort being on the order of "Theta of n log n" steps. Comparing these two, which is better? For large data-sets, Merge-sort is drastically outperforms as it can handle ever larger data-sets without severely impacting the time or steps being taken. 
         </p>
 
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Theta notation is expressed using the greek letter "Θ" followed by a function. The function describes the
+          Theta notation is expressed using the greek letter "Θ" followed by a function (again, the familar constant, linear, quadractic.. that we've seen with the other notations). The function describes the
           average-case
           complexity of the algorithm as the input size increases. For example, an algorithm with a time complexity of
           Θ(n) means
@@ -248,6 +248,23 @@
 
         <!-- Additional Resource Div -->
         <div class="text-center px-6 sm:px-20 py-4">
+          <h1 class="font-bold no-underline text-primary">Additional Free Resources:</h1>
+          <ul class="">
+            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
+                VisuAlgo.net
+              </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
+                VisuAlgo.net
+              </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
+                VisuAlgo.net
+              </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
+                VisuAlgo.net
+              </a></li>
+            
+          </ul>
+
         </div>
 
         <div class="my-3 flex justify-center">
