@@ -155,23 +155,23 @@
           use for a
           particular task.
         </p>
-        <h1 class="text-center font-bold no-underline text-primary">"Wave of the Hand" Approximations</h1>
+        <h1 class="text-center font-bold no-underline text-primary">"Wave of the Hand" Approximations:</h1>
         <p class="text-justify mx-5 mt-1 indent-8">
-           You'll notice there are no smaller order terms referenced in any of the notations. This is a sort of formalized imprecision. When considering algorithmic efficiency developers don't <em>really</em> care about the exact details. These notations are not meant to describe the length of time or steps some algorithm will take <em>exactly</em>, but rather what it's <em>behavior</em> will look like as we approach the infinite limit of data input. It's <em>asymptotic behavior</em>. The shape of it's output curve - be it constant, linear, quadratic, cubic, and so on, as <em>n</em> gets <strong>really</strong> large, is what matters. 
+           You'll notice there are no smaller order terms referenced in any of the notations. This is a sort of formalized imprecision. When considering algorithmic efficiency developers don't <em>really</em> care about the exact details. These notations are not meant to describe the length of time or steps some algorithm will take <em>exactly</em>, but rather what it's behavior will <em>look</em> like as we approach the infinite limit of data input. It's <em>asymptotic behavior</em>. The shape of it's output curve - be it constant, linear, quadratic, cubic, and so on, as <em>n</em> gets <strong>really</strong> large, is what matters. 
          </p>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
           In this context, a "wave of
-          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be, and that's what these
-          notations claim to tell us. Afterall, computer performance varies widely from machine to machine, and tends to increase overtime. Therefore it wouldn't really be that helpful to compare precise numbers.
+          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be and that's what these
+          notations are used for. Afterall, computer performance tends to vary widely from machine to machine, and overtime performance capabilites typically improve. Therefore it wouldn't really make sense to compare precise numbers.
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Big O Notation:</h1>
         <p class="text-justify mx-5 my-1 indent-8">
-          Big O notation is used to describe the upper-bound of an algorithm's time complexity. In other words, it
+          Big O notation is used to describe the upper-bound of an algorithm's time complexity. That is to say it
           provides an
           estimate of the <strong>worst-case</strong> scenario for how long an algorithm will take to complete a task.
-          As in, if every step of the algorithm needs to be taken, what would that look like? This is why Big O is
-          commonly the primary consideration when it comes to algorithms, as the worst-case scenario is often more of a
+          If every single step of the algorithm needs to be taken, what would that look like? This is why Big O is
+          often the primary consideration when it comes to algorithms, as the worst-case scenario is typically a more telling
           concern than the absolute best-case.
         </p>
 
@@ -184,7 +184,7 @@
           being "on the order of <em>n</em> steps".
         </p>
 
-        <img class="mx-auto mt-4 rounded border-2 h-64" src="/blog-posts/bigo.webp" alt="">
+        <img class="mx-auto mt-4 rounded border-2 h-64" src="/public/blog-posts/bigo.webp" alt="">
         <span class="block text-center text-xs mx-auto mb-8 italic">Big O Time Complexity Graph. Credit: Huang,
           D.</span>
 
@@ -193,25 +193,23 @@
           Omega notation is used to describe the lower-bound of the time complexity of an algorithm. It provides an
           estimate of
           the <strong>best-case</strong> scenario for how long an algorithm will take to complete a task. Let's say you had an algorithm you wanted to use 
-          to search an array for a specific value, and that value just happens to be found in the very first index searched. What
-          would that look like? Clearly that would be the most ideal case for the algorithm in that scenario.
+          for searching an array and finding a specific value (assuming it exists). Then, if you were execute the algorithm on a given array, it just happens to find the value in the very 
+          first index searched. What would that look like? Clearly that would be the most ideal case for the algorithm in that scenario. This would be 
+          considered "Omega of 1", aka "constant-time". Because in this example no matter how large the input array was, the "best-case" scenario would always be having found what you were looking for on the very first step taken.
         </p>
 
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Omega notation is expressed using the greek letter "Ω" followed by a function. The function describes the
-          lower-bound of the
-          algorithm as the input size increases. For example, an algorithm with a time complexity of Ω(n) means that the
+          Omega notation is expressed using the greek letter "Ω" followed by a function (typically the same functions considered with Big O: constant, linear, quadratic, and so on). These function describe the
+          lower-bound behavior of the
+          algorithm as the input size <em>n</em> increases. As the data set grows, what effect will that have on the <em>best-case</em>? For example, an algorithm with a time complexity of Ω(n) means that the
           time it
-          takes to complete the task will increase at least linearly with the size of the input data. The functions
-          denoted, and corresponding graphical representations considered with Omega are the same as those
-          considered for Big O. It is important to consider both Big O and Omega to see how an algorithm will perform at
-          it's worst and best-case scenarios. Algorithms can have differing Big O and Omega behavior, or the same. In situations where the best and worst case efficiencies beahve the same, we use "Theta notation".
+          takes to complete the task will increase <em>at least</em> linearly with the size of the input data. The functions
+          denoted, and corresponding output curves considered with Omega are the same as those
+          considered with Big O. It is important to consider both Big O and Big Omega to see how an algorithm will perform at
+          it's worst and best-case scenarios. Algorithms can have differing Big O and Omega behavior, or the same. For situations where the best and worst case efficiencies behave the same we can use "Theta notation".
         </p>
-        <!-- <img class="mx-auto my-0 rounded border-2" src="/blog-posts/cowsay2.png" alt="">
-        <span class="block text-center text-xs mx-auto mb-8 italic"></span> -->
-
-        <!-- <img class="mx-auto my-0 rounded border-2" src="/blog-posts/cowsay3.png" alt="">
-        <span class="block text-center text-xs mx-auto mb-8 italic"></span> -->
+        <img class="mx-auto mt-4 rounded border-2 w-72" src="/public/blog-posts/sort-algo.png" alt="">
+        <span class="block text-center text-xs mx-auto mb-8 italic">Time Complexities of 3 sorting algorithms. <br/> Which do you think performs most efficiently?</span>
 
         <h1 class="text-center font-bold no-underline text-primary">Theta Notation</h1>
         <p class="text-justify mx-5 mt-1 indent-8">
@@ -223,7 +221,7 @@
         </p>
 
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Theta notation is expressed using the gree letter "Θ" followed by a function. The function describes the
+          Theta notation is expressed using the greek letter "Θ" followed by a function. The function describes the
           average-case
           complexity of the algorithm as the input size increases. For example, an algorithm with a time complexity of
           Θ(n) means
@@ -254,7 +252,7 @@
 
         <div class="my-3 flex justify-center">
           <a class="btn glass btn-ghost text-xl text-neutral-content font-shadows rounded-full"
-            href="/blog-posts/blog2.html">Back to Top</a>
+            href="/blog-posts/blog3.html">Back to Top</a>
         </div>
 
       </div>
