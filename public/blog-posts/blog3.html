@@ -146,7 +146,7 @@
         </p>
         <h1 class="text-center font-bold no-underline text-primary">Big O, Omega, and Theta:</h1>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Big O notation, Omega notation, and Theta notation are all used to describe the time complexity of algorithms.
+          Big O notation, Omega notation, and Theta notation are used to describe the time complexity of algorithms.
           Time
           complexity, or "running time", refers to the amount of time it takes for an algorithm to "run" or complete a
           task as
@@ -204,7 +204,7 @@
           algorithm as the input size <em>n</em> increases. As the data set grows, what effect will that have on the <em>best-case</em>? An algorithm with a time complexity of Ω(n) means that the
           time it
           takes to complete the task will increase <em>at least</em> linearly with the size of the input data. The functions
-          denoted, and corresponding output curves considered with Omega are the same as those
+          denoted, and corresponding output curves considered with Omega, are the same as those
           considered with Big O. It is important to consider both Big O and Big Omega to see how an algorithm will perform at
           it's worst and best-case scenarios.
         </p>
@@ -216,19 +216,25 @@
 
         <h1 class="text-center font-bold no-underline text-primary">Big Theta Notation:</h1>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Theta notation, expressed using the capital greek letter "Θ" followed by a function, is used to describe both the upper and lower bounds of an algorithm's time complexity, and applies when both the Big O and Big Omega approximations are the same. It
+          Theta notation, expressed using the capital greek letter "Θ" followed by a function, applies when both the Big O and Big Omega approximations are the same and is used to describe both the upper and lower bounds of an algorithm's time complexity. It
           represents the
           tightest bound for an algorithm's time complexity as it describes how long an algorithm will
           take to run
-          in both the best-case and worst-case scenarios, given a certain input size. In the table above this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps (quadractic), and Merge-sort being on the order of "Theta of n log n" steps (logarithmic). Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms Selection-sort (and Bubble-sort, too) as it can handle ever larger data-sets with less drastic increases to it's overall running time. 
+          in both the best-case and worst-case scenarios, given a certain input size. In the table above this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps (quadractic), and Merge-sort being on the order of "Theta of n log n" steps (logarithmic). Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms Selection-sort (and Bubble-sort, too) as it can handle ever larger data-sets with far less drastic increases to it's overall running time. 
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Final Thoughts</h1>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          In summary, Big O notation, Omega notation, and Theta notation are all used to describe the time complexity of
-          algorithms. Big O notation provides an upper bound on the time complexity, Omega notation provides a lower
-          bound, and 
-          Theta notation can provide both in some situations. By understanding these notations, developers can choose the most
+          In summary, Big O notation, Omega notation, and Theta notation are used in computer science to describe the time complexity of algorithms. 
+          
+          Big O notation describes the upper bound of an algorithm's time complexity, estimating the worst-case scenario.
+          
+          Big Omega notation describes the lower
+          bound time complexity, estimating the best-case scenario. 
+          
+          And finally Big Theta notation can describe both the upper and lower bounds of time complexity, in some situations. 
+          
+          By understanding these notations, developers can choose the most
           efficient
           algorithm for a given task and optimize their programs to run as efficiently as possible.
         </p>
