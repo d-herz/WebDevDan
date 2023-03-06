@@ -162,12 +162,12 @@
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
           In this context, a "wave of
           the hand" approximation provides sufficient information to make informed decisions. All a developer needs is a rough sense of how fast or slow an algorithm will be and that's what these
-          notations are used for. Afterall, computer performance tends to vary widely from machine to machine and increase overtime. Therefore it wouldn't really make sense to compare precise numbers.
+          notations are used for. After all, computer performance tends to vary widely from machine to machine and increase over time. Therefore it wouldn't really make sense to compare precise numbers.
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Big O Notation</h1>
         <p class="text-justify mx-5 my-1 indent-8">
-          Big O notation is used to describe the upper-bound of an algorithm's time complexity. That is to say it
+          Big O notation is used to describe the upper bound of an algorithm's time complexity. That is to say, it
           provides an
           estimate of the <strong>worst-case</strong> scenario for how long an algorithm will take to complete a task.
           If every single step of the algorithm needs to be taken, what would that look like? This is why Big O is
@@ -176,7 +176,7 @@
         </p>
 
         <p class="text-justify mx-5 my-2 indent-8">
-          Big O notation is expressed using a capital letter "O" followed by a function. The function describes the growth
+          Big O notation is expressed using the capital letter "O" followed by a function. The function describes the growth
           rate of the
           algorithm as the input size increases. For example, an algorithm with a time complexity of O(n) means that the
           time it
@@ -190,23 +190,23 @@
 
         <h1 class="text-center font-bold no-underline text-primary">Big Omega Notation</h1>
         <p class="text-justify mx-5 my-1 indent-8">
-          Omega notation is used to describe the lower-bound of the time complexity of an algorithm. It provides an
+          Omega notation is used to describe the lower bound of the time complexity of an algorithm. It provides an
           estimate of
           the <strong>best-case</strong> scenario for how long an algorithm will take to complete a task. Say you had an algorithm you wanted to use 
-          for searching an array and finding a specific value (assuming it exists). Then, if you were execute the algorithm on a given array, it gets lucky and just happens to find the value in the very 
-          first index searched. What would that look like? Clearly that would be the most ideal case for the algorithm in that scenario. This would be 
+          for searching an array and finding a specific value (assuming it exists). Then, if you execute the algorithm on a given array, it gets lucky and happens to find the value in the very 
+          first index searched. What would that look like? Clearly, that would be the most ideal case for the algorithm in that scenario. This would be 
           considered "Omega of 1", aka "constant-time". Because in this example no matter how large the input array was, the "best-case" scenario would always be having found what you were looking for on the very first step taken.
         </p>
 
         <p class="text-justify mx-5 my-1 indent-8">
-          Omega notation is expressed using the capital greek letter "Ω" followed by a function (typically the same functions considered with Big O: constant, linear, quadratic, logarithmic and so on). The corresponding functions describe the
+          Omega notation is expressed using the capital greek letter "Ω" followed by a function (typically the same functions considered with Big O: constant, linear, quadratic, logarithmic, and so on). The corresponding functions describe the
           lower-bound behavior of the
-          algorithm as the input size <em>n</em> increases. As the data set grows, what effect will that have on the <em>best-case</em>? An algorithm with a time complexity of Ω(n) means that the
+          algorithm as the input size <em>n</em> increases. As the data set grows, what effect will that have on the <em>best case</em>? An algorithm with a time complexity of Ω(n) means that the
           time it
           takes to complete the task will increase <em>at least</em> linearly with the size of the input data. The functions
           denoted, and corresponding output curves considered with Omega, are the same as those
           considered with Big O. It is important to consider both Big O and Big Omega to see how an algorithm will perform at
-          it's worst and best-case scenarios.
+          its worst and best-case scenarios.
         </p>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
           Algorithms can have differing Big O and Big Omega behavior, or the same. If an algorithm has identical upper-bound and lower-bound approximations, we can use "Theta notation".
@@ -220,7 +220,7 @@
           represents the
           tightest bound for an algorithm's time complexity as it describes how long an algorithm will
           take to run
-          in both the best-case and worst-case scenarios, given a certain input size. In the table above this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps (quadractic), and Merge-sort being on the order of "Theta of n log n" steps (logarithmic). Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms Selection-sort (and Bubble-sort, too) as it can handle ever larger data-sets with far less drastic increases to it's overall running time. 
+          in both the best-case and worst-case scenarios, given a certain input size. In the table above this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps (quadratic), and Merge-sort being on the order of "Theta of n log n" steps (logarithmic). Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms Selection-sort (and Bubble-sort, too) as it can handle ever larger data sets with far less drastic increases to its overall running time. 
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Final Thoughts</h1>
@@ -232,7 +232,7 @@
           Big Omega notation describes the lower
           bound time complexity, estimating the best-case scenario. 
           
-          And finally Big Theta notation can describe both the upper and lower bounds of time complexity, in some situations. 
+          And finally, Big Theta notation can describe both the upper and lower bounds of time complexity, in some situations. 
           
           By understanding these notations, developers can choose the most
           efficient
