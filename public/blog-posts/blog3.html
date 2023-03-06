@@ -161,7 +161,7 @@
          </p>
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
           In this context, a "wave of
-          the hand" approximation provides sufficient information to make informed decisions. All we need is a rough sense of how fast or slow an algorithm will be to base our decisions on and that's what these
+          the hand" approximation provides sufficient information to make informed decisions. All a developer needs is a rough sense of how fast or slow an algorithm will be and that's what these
           notations are used for. Afterall, computer performance tends to vary widely from machine to machine and increase overtime. Therefore it wouldn't really make sense to compare precise numbers.
         </p>
 
@@ -180,53 +180,54 @@
           rate of the
           algorithm as the input size increases. For example, an algorithm with a time complexity of O(n) means that the
           time it
-          takes to complete the task will increase in a linear fashion with the size of the input data. This would be described as
+          takes to complete the task will increase in a <em>linear</em> fashion with the size of the input data. This would be described as
           being "on the order of <em>n</em> steps".
         </p>
 
-        <img class="mx-auto mt-4 rounded border-2 h-64" src="/blog-posts/bigo.webp" alt="">
+        <img class="mx-auto mt-4 rounded border-2 h-64" src="/public/blog-posts/bigo.webp" alt="">
         <span class="block text-center text-xs mx-auto mb-8 italic">Big O Time Complexity Graph. Credit: Huang,
           D.</span>
 
-        <h1 class="text-center font-bold no-underline text-primary">Omega Notation</h1>
+        <h1 class="text-center font-bold no-underline text-primary">Omega Notation:</h1>
         <p class="text-justify mx-5 my-1 indent-8">
           Omega notation is used to describe the lower-bound of the time complexity of an algorithm. It provides an
           estimate of
-          the <strong>best-case</strong> scenario for how long an algorithm will take to complete a task. Let's say you had an algorithm you wanted to use 
-          for searching an array and finding a specific value (assuming it exists). Then, if you were execute the algorithm on a given array, it just happens to find the value in the very 
+          the <strong>best-case</strong> scenario for how long an algorithm will take to complete a task. Say you had an algorithm you wanted to use 
+          for searching an array and finding a specific value (assuming it exists). Then, if you were execute the algorithm on a given array, it gets lucky and just happens to find the value in the very 
           first index searched. What would that look like? Clearly that would be the most ideal case for the algorithm in that scenario. This would be 
           considered "Omega of 1", aka "constant-time". Because in this example no matter how large the input array was, the "best-case" scenario would always be having found what you were looking for on the very first step taken.
         </p>
 
-        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Omega notation is expressed using the greek letter "Ω" followed by a function (typically the same functions considered with Big O: constant, linear, quadratic, and so on). These function describe the
+        <p class="text-justify mx-5 my-1 indent-8">
+          Omega notation is expressed using the greek letter "Ω" followed by a function (typically the same functions considered with Big O: constant, linear, quadratic, and so on). The corresponding functions describe the
           lower-bound behavior of the
           algorithm as the input size <em>n</em> increases. As the data set grows, what effect will that have on the <em>best-case</em>? For example, an algorithm with a time complexity of Ω(n) means that the
           time it
           takes to complete the task will increase <em>at least</em> linearly with the size of the input data. The functions
           denoted, and corresponding output curves considered with Omega are the same as those
           considered with Big O. It is important to consider both Big O and Big Omega to see how an algorithm will perform at
-          it's worst and best-case scenarios. Algorithms can have differing Big O and Omega behavior, or the same. For situations where the best and worst case efficiencies behave the same we can use "Theta notation".
+          it's worst and best-case scenarios.
         </p>
-        <img class="mx-auto mt-4 rounded border-2 w-72" src="/blog-posts/sort-algo.png" alt="">
+        <p class="text-justify mx-5 mt-1 mb-4 indent-8">
+          Algorithms can have differing Big O and Big Ω behavior, or the same. If an algorithm has identical upper-bound and lower-bound approximations, we can use "Theta notation".
+        </p>
+        <img class="mx-auto mt-4 rounded border-2 w-72" src="/public/blog-posts/sort-algo.png" alt="">
         <span class="block text-center text-xs mx-auto mb-8 italic">Time Complexities of 3 sorting algorithms. <br/> Which do you think performs most efficiently?</span>
 
-        <h1 class="text-center font-bold no-underline text-primary">Theta Notation</h1>
+        <h1 class="text-center font-bold no-underline text-primary">Theta Notation:</h1>
         <p class="text-justify mx-5 mt-1 indent-8">
-          Theta notation is used to describe both the upper and lower bounds of an algorithm's time complexity. It
+          Theta notation, expressed using the greek letter "Θ" followed by a function, is used to describe both the upper and lower bounds of an algorithm's time complexity, and applies when both the Big O and Big Ω approximations are the same. It
           represents the
           tightest bound for an algorithm's time complexity as it describes how long an algorithm will
           take to run
-          in both the best-case and worst-case scenarios, given a certain input size. Theta notation only applies when both the Big O and Big Ω approximations are the same. In the above graphic this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps, and Merge-sort being on the order of "Theta of n log n" steps. Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms both as it can handle ever larger data-sets without severely impacting the time or steps being taken. 
+          in both the best-case and worst-case scenarios, given a certain input size. In the table above this is the case for both the "Selection Sort" and "Merge Sort" algorithms. Hence, we could describe each of those with Theta; Selection-sort being on the order of "Theta of n squared" steps (quadractic), and Merge-sort being on the order of "Theta of n log n" steps (logarithmic). Comparing these two, which is better? For large data-sets, Merge-sort drastically outperforms Selection-sort (and Bubble-sort, too) as it can handle ever larger data-sets with less drastic increases to it's overall running time. 
         </p>
 
         <p class="text-justify mx-5 mt-1 mb-4 indent-8">
-          Theta notation is expressed using the greek letter "Θ" followed by a function (again, the familar constant, linear, quadractic.. that we've seen with the other notations). The function describes the
-          average-case
-          complexity of the algorithm as the input size increases. For example, an algorithm with a time complexity of
+          An algorithm with a time complexity of
           Θ(n) means
-          that the time it takes to complete the task will increase linearly with the size of the input data. Again, the
-          functions denoted and considered are represented graphically the same for Big O, Omega, and Theta notations.
+          that the time it takes to complete the task will increase linearly with the size of the input data, in both the best and worst cases. Again, the
+          functions denoted and considered are represented graphically the same for Big O, Omega, and now Theta notations.
         </p>
 
         <h1 class="text-center font-bold no-underline text-primary">Final Thoughts</h1>
@@ -234,7 +235,7 @@
           In summary, Big O notation, Omega notation, and Theta notation are all used to describe the time complexity of
           algorithms. Big O notation provides an upper bound on the time complexity, Omega notation provides a lower
           bound, and
-          Theta notation provides a tight bound. By understanding these notations, developers can choose the most
+          Theta notation provides informs us of both. By understanding these notations, developers can choose the most
           efficient
           algorithm for a given task and optimize their programs to run as efficiently as possible.
         </p>
@@ -250,18 +251,18 @@
         <div class="text-center px-6 sm:px-20 py-4">
           <h1 class="font-bold no-underline text-primary">Additional Free Resources:</h1>
           <ul class="">
-            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
-                VisuAlgo.net
-              </a></li>
-            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
-                VisuAlgo.net
-              </a></li>
-            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
-                VisuAlgo.net
-              </a></li>
-            <li><a class="text-success underline" target="_blank" href="https://visualgo.net/en">
-                VisuAlgo.net
-              </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://www.youtube.com/watch?v=3WDWH59k1q4">
+              Visualization and comparison of Sorting Algorithms by CS50
+            </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://www.bigocheatsheet.com/">
+              Big-O Cheat Sheet
+            </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038">
+              Algorithms in JavaScript
+            </a></li>
+            <li><a class="text-success underline" target="_blank" href="https://www.sortvisualizer.com/">
+                Sort Visualizer
+            </a></li>
             
           </ul>
 
