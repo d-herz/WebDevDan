@@ -3672,12 +3672,12 @@ h2{
   max-height: 100vh;
 }
 
-.max-h-\[568px\] {
-  max-height: 568px;
-}
-
 .max-h-\[548px\] {
   max-height: 548px;
+}
+
+.max-h-\[568px\] {
+  max-height: 568px;
 }
 
 .min-h-screen {
