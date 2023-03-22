@@ -5,7 +5,22 @@
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-My Web Developer Portfolio site. This is where you can find my featured projects, lectures I have given, blog posts I have written, and more! Built with a responsive approach, this site is both a demonstration and a hub for my personal web development activity. It is a place where potential clients and prospective employers can see what I've been up to, check out my latest work, and even download a copy of my resume. This latest version is a massive update from my first attempt and has been built from the ground up using custom HTML, CSS, and TailwindCSS.
+My custom Web Developer Portfolio site built with HTML, JavaScript, and CSS. 
+</p>
+<p align="left">
+This site is where you can find my:
+<ul> 
+<li>Featured Projects</li>
+<li>Blog posts</li>
+<li>Lectures</li>
+<li>Resume</li>
+<li>and more!</li>
+
+</ul>
+Built with a responsive approach, <a href="https://webdevdan.com/">WebDevDan.com</a> is a hub for my personal web development activity. It is a place where potential clients and prospective employers can see what I've been up to, check out my latest work, and even download a copy of my resume. 
+</p>
+<p alight="left">
+The current version is a massive update from my first portfolio and has been built from the ground up using custom HTML, JavaScript,CSS, and TailwindCSS.
 </p>
 
 
@@ -36,8 +51,6 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 </p>
 
 
-
-
 <h3 align="left">Quick facts about this project:</h3>
 <p align="left">
 <ul>
@@ -45,17 +58,15 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 <li> Hosted on <a href="https://app.netlify.com/drop"> Netlify</a> </li>
 <li> CI/CD pipeline through Netlify and Github</li>
 
-<li> Built with HTML5 and CSS3  </li>
+<li> Built with HTML, JavaScript, and CSS </li>
 <li> Also uses: TailwindCSS, daisyUI, & Node/NPM</li>
 <!----- <li> </li> ---->
 </ul>
 </p>
 
 
-
 <h3 align="left">I've recently added:</h3>
 <p align="left">
-
 <ul>
 <li> 'Featured Projects' Carousel </li>
 <li> Continuous Deployment with Netlify & Github  </li>
@@ -64,9 +75,6 @@ My Web Developer Portfolio site. This is where you can find my featured projects
 <!----- <li> </li> ---->
 </ul>
 </p>
-
-
-
 
 
 <h3 align="left">Acknowledgements:</h3>
