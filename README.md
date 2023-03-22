@@ -20,7 +20,7 @@ This site is where you can find my:
 Built with a responsive approach, <a href="https://webdevdan.com/">WebDevDan.com</a> is a hub for my personal web development activity. It is a place where potential clients and prospective employers can see what I've been up to, check out my latest work, and even download a copy of my resume. 
 </p>
 <p alight="left">
-The current version is a massive update from my first portfolio and has been built from the ground up using custom HTML, JavaScript,CSS, and TailwindCSS.
+The current version is a massive update from my first portfolio and has been built from the ground up using custom HTML, JavaScript, CSS, Tailwind CSS, and DaisyUI.
 </p>
 
 
@@ -59,7 +59,7 @@ The current version is a massive update from my first portfolio and has been bui
 <li> CI/CD pipeline through Netlify and Github</li>
 
 <li> Built with HTML, JavaScript, and CSS </li>
-<li> Also uses: TailwindCSS, daisyUI, & Node/NPM</li>
+<li> Also uses: Tailwind CSS, DaisyUI, & Node/NPM</li>
 <!----- <li> </li> ---->
 </ul>
 </p>
