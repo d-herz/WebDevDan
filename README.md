@@ -68,8 +68,8 @@ The current version is a massive update from my first portfolio and has been bui
 <h3 align="left">I've recently added:</h3>
 <p align="left">
 <ul>
-<li> 'Featured Projects' Carousel </li>
-<li> Continuous Deployment with Netlify & Github  </li>
+<li> 'Featured Projects' carousel </li>
+<li> Continuous deployment with Netlify & Github  </li>
 <li> 'Lecture' page </li>
 <li> 'Blog' page</li>
 <!----- <li> </li> ---->
